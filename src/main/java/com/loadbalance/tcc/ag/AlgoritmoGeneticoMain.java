@@ -23,12 +23,12 @@ import org.cloudsimplus.builders.tables.CloudletsTableBuilder;
 /**
  * AlgoritmoGenetico
  */
-public class AlgoritmoGenetico {
+public class AlgoritmoGeneticoMain {
 
-    private static final int HOSTS = 25;
+    private static final int HOSTS = 3;
     private static final int HOST_PES = 8;
 
-    private static final int VMS = 50;
+    private static final int VMS = 6;
     private static final int VM_PES = 2;
 
     private static final int CLOUDLETS = 8;
@@ -41,23 +41,23 @@ public class AlgoritmoGenetico {
     private List<Cloudlet> cloudletList;
 
     public static void main(String[] args) {
-        new AlgoritmoGenetico();
+        new AlgoritmoGeneticoMain();
     }
 
-    private AlgoritmoGenetico() {
+    private AlgoritmoGeneticoMain() {
         simulation = new CloudSim();
-        
+
         vmList = createVms();
         cloudletList = createCloudlets();
         createDatacenter();
 
-        //Creates a broker that is a software acting on behalf a cloud customer to manage his/her VMs and Cloudlets
+        // Creates a broker that is a software acting on behalf a cloud customer to
+        // manage his/her VMs and Cloudlets
         broker0 = new DatacenterBrokerSimple(simulation);
 
         broker0.submitVmList(vmList);
         broker0.submitCloudletList(cloudletList);
 
-        
         simulation.start();
 
         final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
@@ -70,7 +70,7 @@ public class AlgoritmoGenetico {
      */
     private Datacenter createDatacenter() {
         final List<Host> hostList = new ArrayList<>(HOSTS);
-        for(int i = 0; i < HOSTS; i++) {
+        for (int i = 0; i < HOSTS; i++) {
             Host host = createHost();
             // host.setActive(true);
             hostList.add(host);
@@ -81,20 +81,20 @@ public class AlgoritmoGenetico {
 
     private Host createHost() {
         final List<Pe> peList = new ArrayList<>(HOST_PES);
-        //List of Host's CPUs (Processing Elements, PEs)
+        // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
-            //Uses a PeProvisionerSimple by default to provision PEs for VMs
+            // Uses a PeProvisionerSimple by default to provision PEs for VMs
             peList.add(new PeSimple(1000));
         }
 
-        final long ram = 1024; //in Megabytes
-        final long bw = 10000; //in Megabits/s
-        final long storage = 10000; //in Megabytes
+        final long ram = 1024; // in Megabytes
+        final long bw = 10000; // in Megabits/s
+        final long storage = 10000; // in Megabytes
 
         /*
-        Uses ResourceProvisionerSimple by default for RAM and BW provisioning
-        and VmSchedulerSpaceShared for VM scheduling.
-        */
+         * Uses ResourceProvisionerSimple by default for RAM and BW provisioning and
+         * VmSchedulerSpaceShared for VM scheduling.
+         */
         return new HostSimple(ram, bw, storage, peList, false);
     }
 
@@ -104,7 +104,7 @@ public class AlgoritmoGenetico {
     private List<Vm> createVms() {
         final List<Vm> list = new ArrayList<>(VMS);
         for (int i = 0; i < VMS; i++) {
-            //Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
+            // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
             final Vm vm = new VmSimple(1000, VM_PES);
             vm.setRam(512).setBw(1000).setSize(1000);
             list.add(vm);
@@ -119,7 +119,8 @@ public class AlgoritmoGenetico {
     private List<Cloudlet> createCloudlets() {
         final List<Cloudlet> list = new ArrayList<>(CLOUDLETS);
 
-        //UtilizationModel defining the Cloudlets use only 50% of any resource all the time
+        // UtilizationModel defining the Cloudlets use only 50% of any resource all the
+        // time
         final UtilizationModelDynamic utilizationModel = new UtilizationModelDynamic(0.5);
 
         for (int i = 0; i < CLOUDLETS; i++) {
