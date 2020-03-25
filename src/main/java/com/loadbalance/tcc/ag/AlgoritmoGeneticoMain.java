@@ -25,10 +25,10 @@ import org.cloudsimplus.builders.tables.CloudletsTableBuilder;
  */
 public class AlgoritmoGeneticoMain {
 
-    private static final int HOSTS = 3;
+    private static final int HOSTS = 25;
     private static final int HOST_PES = 8;
 
-    private static final int VMS = 6;
+    private static final int VMS = 50;
     private static final int VM_PES = 2;
 
     private static final int CLOUDLETS = 8;
