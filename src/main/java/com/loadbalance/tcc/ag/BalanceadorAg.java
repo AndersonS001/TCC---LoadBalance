@@ -31,28 +31,28 @@ public class BalanceadorAg extends VmAllocationPolicyAbstract {
             MachineManager.addHost(host);
         }
 
-        Population pop = new Population(75, true);
+        Population pop = new Population(50, true);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
             pop = GA.evolvePopulation(pop, vm);
         }
 
         // Print final results
         System.out.println("Finished");
-        // System.out.println("Final distance: " + pop.getFittest().getDistance());
-        System.out.println("Solution:");
 
         Balanceamento p = pop.getFittest(vm);
 
-        for (int i = 0; i < hostList.size(); i++) {
-            if (p.getHost(i).isSuitableForVm(vm)) {
-                if (i != 0)
-                    System.out.println("Indice: " + i);
+        return Optional.of(p.getMaquinaOficial());
 
-                return Optional.of(pop.getFittest(vm).getHost(i));
-            }
-        }
+        // for (int i = 0; i < hostList.size(); i++) {
+            // if (p.getHost(i).isSuitableForVm(vm)) {
+            //     if (i != 0)
+            //         System.out.println("Indice: " + i);
 
-        return Optional.empty();
+            //     return Optional.of(pop.getFittest(vm).getHost(i));
+            // }
+        // }
+
+        // return Optional.empty();
     }
 }

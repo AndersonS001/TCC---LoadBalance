@@ -3,6 +3,7 @@ package com.loadbalance.tcc.ag;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 import org.cloudbus.cloudsim.brokers.DatacenterBroker;
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple;
@@ -28,7 +29,7 @@ public class AlgoritmoGeneticoMain {
     private static final int HOSTS = 25;
     private static final int HOST_PES = 8;
 
-    private static final int VMS = 50;
+    private static final int VMS = 40;
     private static final int VM_PES = 2;
 
     private static final int CLOUDLETS = 8;
@@ -84,12 +85,12 @@ public class AlgoritmoGeneticoMain {
         // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
             // Uses a PeProvisionerSimple by default to provision PEs for VMs
-            peList.add(new PeSimple(1000));
+            peList.add(new PeSimple(new Random().nextInt(2000)));
         }
 
-        final long ram = 1024; // in Megabytes
-        final long bw = 10000; // in Megabits/s
-        final long storage = 10000; // in Megabytes
+        final long ram = (long) (new Random().nextDouble() * 3500); // in Megabytes
+        final long bw = (long) (new Random().nextDouble() * 15000); // in Megabits/s
+        final long storage = (long) (new Random().nextDouble() * 15000); // in Megabytes
 
         /*
          * Uses ResourceProvisionerSimple by default for RAM and BW provisioning and
@@ -105,8 +106,9 @@ public class AlgoritmoGeneticoMain {
         final List<Vm> list = new ArrayList<>(VMS);
         for (int i = 0; i < VMS; i++) {
             // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
-            final Vm vm = new VmSimple(1000, VM_PES);
-            vm.setRam(512).setBw(1000).setSize(1000);
+            final Vm vm = new VmSimple(new Random().nextInt(666), VM_PES);
+            vm.setRam(new Random().nextInt(666) + 1).setBw(new Random().nextInt(666) + 1)
+                    .setSize(new Random().nextInt(666) + 1);
             list.add(vm);
         }
 
@@ -125,7 +127,7 @@ public class AlgoritmoGeneticoMain {
 
         for (int i = 0; i < CLOUDLETS; i++) {
             final Cloudlet cloudlet = new CloudletSimple(CLOUDLET_LENGTH, CLOUDLET_PES, utilizationModel);
-            cloudlet.setSizes(1024);
+            cloudlet.setSizes(new Random().nextInt(1000));
             list.add(cloudlet);
         }
 

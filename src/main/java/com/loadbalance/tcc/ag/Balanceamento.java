@@ -2,8 +2,12 @@ package com.loadbalance.tcc.ag;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
 
 import org.cloudbus.cloudsim.hosts.Host;
+import org.cloudbus.cloudsim.resources.Pe;
 import org.cloudbus.cloudsim.vms.Vm;
 
 public class Balanceamento {
@@ -11,6 +15,7 @@ public class Balanceamento {
     private ArrayList<Host> hosts = new ArrayList<Host>();
     // Cache
     private double fitness = 0;
+    private int indice = 0;
 
     // Constructs a blank tour
     public Balanceamento() {
@@ -38,39 +43,70 @@ public class Balanceamento {
         return (Host) hosts.get(hostPosition);
     }
 
+    public Host getMaquinaOficial() {
+        return hosts.get(indice);
+    }
+
     // Sets a city in a certain position within a tour
     public void setHost(int hostPosition, Host host) {
         hosts.set(hostPosition, host);
         // If the tours been altered we need to reset the fitness and distance
         fitness = 0;
+        indice = 0;
     }
 
     // Gets the tours fitness
     public double getFitness(Vm vm) {
         if (fitness == 0) {
-            fitness = 1 / calculaFitness(vm);
+            fitness = calculaFitness(vm);
         }
         return fitness;
     }
 
     public double calculaFitness(Vm vm) {
+        // int cloudlet = 100;
+
+        // Host host = getHost(new Random().nextInt(hostSize()));
         double fitness = 0;
 
-        int cloudlet = 10000;
+        for (int i = 0; i < hostSize(); i++) {
+            Host host = getHost(i);
+            List<Pe> coreDisponivel = calculaPe(host, vm);
 
-        Host host = getHost(0);
-        fitness = (cloudlet / host.getTotalAvailableMips())
-                    + (host.getBwUtilization() / vm.getCurrentRequestedTotalMips());
+            double fit = (host.getTotalAvailableMips() / vm.getCurrentRequestedTotalMips())
+                    * (host.getRam().getAvailableResource() / vm.getRam().getCapacity())
+                    * (host.getStorage().getAvailableResource() / vm.getStorage().getCapacity())
+                    * (coreDisponivel.size() / vm.getCurrentRequestedMips().size())
+                    * (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw());
 
-        // for (int cityIndex = 0; cityIndex < hostSize(); cityIndex++) {
-        //     Host host = getHost(cityIndex);
-
-        //     fitness += (cloudlet / host.getTotalAvailableMips())
-        //             + (host.getBwUtilization() / vm.getCurrentRequestedTotalMips());
-
-        // }
+            if (fitness < fit) {
+                fitness = fit;
+                indice = i;
+            }
+        }
 
         return fitness;
+    }
+
+    public List<Pe> calculaPe(Host host, Vm vm) {
+        final List<Pe> freePeList = host.getFreePeList();
+        final List<Pe> selectedPes = new ArrayList<>();
+        try {
+            final Iterator<Pe> peIterator = freePeList.iterator();
+            Pe pe = peIterator.next();
+            for (final double mips : vm.getCurrentRequestedMips()) {
+                if (mips <= pe.getCapacity()) {
+                    selectedPes.add(pe);
+                    if (!peIterator.hasNext()) {
+                        break;
+                    }
+                    pe = peIterator.next();
+                }
+            }
+        } catch (Exception e) {
+        }
+
+        return selectedPes;
     }
 
     // Get number of hosts

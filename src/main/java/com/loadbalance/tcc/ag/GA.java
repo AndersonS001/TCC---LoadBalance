@@ -7,7 +7,7 @@ public class GA {
     /* GA parameters */
     private static final double mutationRate = 0.015;
     private static final int tournamentSize = 5;
-    private static final boolean elitism = true;
+    private static final boolean elitism = false;
 
     // Evolves a population over one generation
     public static Population evolvePopulation(Population pop, Vm vm) {
@@ -35,7 +35,7 @@ public class GA {
 
         // Mutate the new population a bit to add some new genetic material
         for (int i = elitismOffset; i < newPopulation.populationSize(); i++) {
-            mutate(newPopulation.getHost(i), vm);
+            mutate(newPopulation.getSolucao(i), vm);
         }
 
         return newPopulation;
@@ -108,7 +108,7 @@ public class GA {
         // add it
         for (int i = 0; i < tournamentSize; i++) {
             int randomId = (int) (Math.random() * pop.populationSize());
-            tournament.saveTour(i, pop.getHost(randomId));
+            tournament.saveTour(i, pop.getSolucao(randomId));
         }
         // Get the fittest tour
         Balanceamento fittest = tournament.getFittest(vm);

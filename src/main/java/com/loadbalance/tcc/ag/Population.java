@@ -4,11 +4,11 @@ import org.cloudbus.cloudsim.vms.Vm;
 
 public class Population {
     // Holds population of host
-    Balanceamento[] machines;
+    Balanceamento[] solucoes;
 
     // Construct a population
     public Population(int hostSize, boolean inicializa) {
-        machines = new Balanceamento[hostSize];
+        solucoes = new Balanceamento[hostSize];
         // If we need to initialise a population of tours do so
         if (inicializa) {
             // Loop and create individuals
@@ -22,21 +22,21 @@ public class Population {
 
     // Saves a tour
     public void saveTour(int index, Balanceamento tour) {
-        machines[index] = tour;
+        solucoes[index] = tour;
     }
     
     // Gets a tour from population
-    public Balanceamento getHost(int index) {
-        return machines[index];
+    public Balanceamento getSolucao(int index) {
+        return solucoes[index];
     }
 
     // Gets the best tour in the population
     public Balanceamento getFittest(Vm vm) {
-        Balanceamento fittest = machines[0];
+        Balanceamento fittest = solucoes[0];
         // Loop through individuals to find fittest
         for (int i = 1; i < populationSize(); i++) {
-            if (fittest.getFitness(vm) <= getHost(i).getFitness(vm)) {
-                fittest = getHost(i);
+            if (fittest.getFitness(vm) < getSolucao(i).getFitness(vm)) {
+                fittest = getSolucao(i);
             }
         }
         return fittest;
@@ -44,7 +44,7 @@ public class Population {
 
     // Gets host size
     public int populationSize() {
-        return machines.length;
+        return solucoes.length;
     }
 
 }
