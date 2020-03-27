@@ -73,7 +73,6 @@ public class AlgoritmoGeneticoMain {
         final List<Host> hostList = new ArrayList<>(HOSTS);
         for (int i = 0; i < HOSTS; i++) {
             Host host = createHost();
-            // host.setActive(true);
             hostList.add(host);
         }
 

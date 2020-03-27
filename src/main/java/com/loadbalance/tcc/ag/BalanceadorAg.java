@@ -43,16 +43,5 @@ public class BalanceadorAg extends VmAllocationPolicyAbstract {
         Balanceamento p = pop.getFittest(vm);
 
         return Optional.of(p.getMaquinaOficial());
-
-        // for (int i = 0; i < hostList.size(); i++) {
-            // if (p.getHost(i).isSuitableForVm(vm)) {
-            //     if (i != 0)
-            //         System.out.println("Indice: " + i);
-
-            //     return Optional.of(pop.getFittest(vm).getHost(i));
-            // }
-        // }
-
-        // return Optional.empty();
     }
 }

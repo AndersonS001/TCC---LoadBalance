@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 
 import org.cloudbus.cloudsim.hosts.Host;
 import org.cloudbus.cloudsim.resources.Pe;
@@ -64,9 +63,6 @@ public class Balanceamento {
     }
 
     public double calculaFitness(Vm vm) {
-        // int cloudlet = 100;
-
-        // Host host = getHost(new Random().nextInt(hostSize()));
         double fitness = 0;
 
         for (int i = 0; i < hostSize(); i++) {
