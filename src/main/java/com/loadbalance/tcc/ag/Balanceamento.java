@@ -30,8 +30,8 @@ public class Balanceamento {
     // Creates a random individual
     public void generateIndividual() {
         // Loop through all our destination cities and add them to our tour
-        for (int cityIndex = 0; cityIndex < MachineManager.numberOfHosts(); cityIndex++) {
-            setHost(cityIndex, MachineManager.getHost(cityIndex));
+        for (int hostIndex = 0; hostIndex < MachineManager.numberOfHosts(); hostIndex++) {
+            setHost(hostIndex, MachineManager.getHost(hostIndex));
         }
         // Randomly reorder the tour
         Collections.shuffle(hosts);

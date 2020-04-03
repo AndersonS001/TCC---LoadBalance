@@ -1,0 +1,26 @@
+package com.loadbalance.tcc.ant;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicyAbstract;
+import org.cloudbus.cloudsim.hosts.Host;
+import org.cloudbus.cloudsim.vms.Vm;
+
+public class BalanceadorAnt extends VmAllocationPolicyAbstract {
+
+    @Override
+    protected Optional<Host> defaultFindHostForVm(final Vm vm) {
+        final List<Host> hostList = getHostList();
+
+        AntColonyOptimization ant = new AntColonyOptimization(hostList.size(), hostList);
+        ArrayList<Host> x = new ArrayList<>();
+        x.addAll(ant.startAntOptimization(vm));
+
+        // Print final results
+        System.out.println("Finished");
+
+        return Optional.of(x.get(0));
+    }
+}
