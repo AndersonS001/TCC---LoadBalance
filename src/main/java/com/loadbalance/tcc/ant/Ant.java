@@ -10,7 +10,7 @@ import org.cloudbus.cloudsim.vms.Vm;
 
 public class Ant {
 
-	protected int trailSize;
+	protected int hostSize;
 
 	protected int indice = 0;
 
@@ -20,22 +20,24 @@ public class Ant {
 	protected boolean visited[];
 	protected boolean visitedHost[];
 
-	public Ant(int tourSize) {
-		this.trailSize = tourSize;
-		this.trail = new int[tourSize];
-		this.visited = new boolean[tourSize];
+	public Ant(int hostSize) {
+		this.hostSize = hostSize;
+		this.trail = new int[hostSize];
+		this.visited = new boolean[hostSize];
 		
 		trailHost = new ArrayList<Host>();
-		visitedHost = new boolean[tourSize];
+		visitedHost = new boolean[hostSize];
 	}
 
-	// protected void visitCity(int currentIndex, int city) {
-	// 	trail[currentIndex + 1] = city;
-	// 	visited[city] = true;
-	// }
+	protected void atualizaIndice(){
+		Host h = trailHost.get(0);
+		trailHost.set(0, trailHost.get(indice));
+		trailHost.set(indice, h);
+	}
 
 	protected void visitMachine(int currentIndex, int indHost, ArrayList<Host> host) {
 		trailHost.add(currentIndex + 1, host.get(indHost));
+
 		visitedHost[indHost] = true;
 	}
 
@@ -86,16 +88,8 @@ public class Ant {
 		return selectedPes;
 	}
 
-	// protected double trailLength(double graph[][]) {
-	// double length = graph[trail[trailSize - 1]][trail[0]];
-	// for (int i = 0; i < trailSize - 1; i++) {
-	// length += graph[trail[i]][trail[i + 1]];
-	// }
-	// return length;
-	// }
-
 	protected void clear() {
-		for (int i = 0; i < trailSize; i++)
+		for (int i = 0; i < hostSize; i++)
 			visited[i] = false;
 	}
 

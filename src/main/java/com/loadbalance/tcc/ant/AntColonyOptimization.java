@@ -19,7 +19,7 @@ public class AntColonyOptimization {
     private double antFactor = 0.8;
     private double randomFactor = 0.01;
 
-    private int maxIterations = 1000;
+    private int maxIterations = 500;
 
     private int numberOfHosts;
     private int numberOfAnts;
@@ -70,16 +70,7 @@ public class AntColonyOptimization {
      * @return
      */
     public List<Host> startAntOptimization(Vm vm) {
-        List<Host> result = new ArrayList<>();
-
-        IntStream.rangeClosed(1, 3).forEach(i -> {
-            // System.out.println("Attempt #" + i);
-
-            List<Host> resultX = solve(vm);
-
-            if (i == 3)
-                result.addAll(resultX);
-        });
+        List<Host> result = solve(vm);
 
         return result;
     }
@@ -95,8 +86,7 @@ public class AntColonyOptimization {
             updateTrails(vm);
             updateBest(vm);
         });
-        // System.out.println("Best tour length: " + (bestHostFit - numberOfHosts));
-        // System.out.println("Best tour order: " + (bestTourOrder));
+
         return bestTourOrder;
     }
 
@@ -107,7 +97,6 @@ public class AntColonyOptimization {
         IntStream.range(0, numberOfAnts).forEach(i -> {
             ants.forEach(ant -> {
                 ant.clear();
-                // ant.visitCity(-1, random.nextInt(numberOfHosts));
                 ant.visitMachine(-1, random.nextInt(numberOfHosts), hosts);
             });
         });
@@ -180,7 +169,6 @@ public class AntColonyOptimization {
             }
         }
         for (Ant a : ants) {
-            // double contribution = Q / a.trailLength(graph);
             double contribution = Q / a.calculaFitness(vm, hosts);
 
             for (int i = 0; i < numberOfHosts - 1; i++) {
@@ -197,20 +185,15 @@ public class AntColonyOptimization {
         if (bestTourOrder == null) {
             bestTourOrder = ants.get(0).trailHost;
             bestHostFit = ants.get(0).calculaFitness(vm, hosts);
-
-            // bestTourLength = ants.get(0).trailLength(graph);
         }
-        for (Ant a : ants) {
 
-            if (a.calculaFitness(vm, hosts) < bestHostFit) {
-                bestHostFit = a.calculaFitness(vm, hosts);
+        for (Ant a : ants) {
+            double fit = a.calculaFitness(vm, a.trailHost);
+            if (fit < bestHostFit) {
+                bestHostFit = fit;
+                a.atualizaIndice();
                 bestTourOrder = a.trailHost;
             }
-
-            // if (a.trailLength(graph) < bestTourLength) {
-            // bestTourLength = a.trailLength(graph);
-            // bestTourOrder = a.trail.clone();
-            // }
         }
     }
 
