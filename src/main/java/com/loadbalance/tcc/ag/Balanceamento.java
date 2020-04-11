@@ -10,7 +10,6 @@ import org.cloudbus.cloudsim.resources.Pe;
 import org.cloudbus.cloudsim.vms.Vm;
 
 public class Balanceamento {
-    // Holds our tour of cities
     private ArrayList<Host> hosts = new ArrayList<Host>();
     // Cache
     private double fitness = 0;
@@ -29,15 +28,14 @@ public class Balanceamento {
 
     // Creates a random individual
     public void generateIndividual() {
-        // Loop through all our destination cities and add them to our tour
         for (int hostIndex = 0; hostIndex < MachineManager.numberOfHosts(); hostIndex++) {
             setHost(hostIndex, MachineManager.getHost(hostIndex));
         }
-        // Randomly reorder the tour
+        // Randomly reorder the list
         Collections.shuffle(hosts);
     }
 
-    // Gets a city from the tour
+    // Gets a host from the list
     public Host getHost(int hostPosition) {
         return (Host) hosts.get(hostPosition);
     }
@@ -46,7 +44,6 @@ public class Balanceamento {
         return hosts.get(indice);
     }
 
-    // Sets a city in a certain position within a tour
     public void setHost(int hostPosition, Host host) {
         hosts.set(hostPosition, host);
         // If the tours been altered we need to reset the fitness and distance

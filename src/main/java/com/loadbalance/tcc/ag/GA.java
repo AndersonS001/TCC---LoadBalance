@@ -63,13 +63,12 @@ public class GA {
             }
         }
 
-        // Loop through parent2's city tour
         for (int i = 0; i < parent2.hostSize(); i++) {
-            // If child doesn't have the city add it
+            // If child doesn't have the host add it
             if (!child.containsHost(parent2.getHost(i))) {
                 // Loop to find a spare position in the child's tour
                 for (int ii = 0; ii < child.hostSize(); ii++) {
-                    // Spare position found, add city
+                    // Spare position found, add host
                     if (child.getHost(ii) == null) {
                         child.setHost(ii, parent2.getHost(i));
                         break;
@@ -83,20 +82,20 @@ public class GA {
 
     // Mutate a tour using swap mutation
     private static void mutate(Balanceamento tour, Vm vm) {
-        // Loop through tour cities
+        // Loop through free hots
         for (int tourPos1 = 0; tourPos1 < tour.hostSize(); tourPos1++) {
             // Apply mutation rate
             if (Math.random() < mutationRate) {
-                // Get a second random position in the tour
+                // Get a second random position in the list
                 int tourPos2 = (int) (tour.hostSize() * Math.random());
 
-                // Get the cities at target position in tour
-                Host city1 = tour.getHost(tourPos1);
-                Host city2 = tour.getHost(tourPos2);
+                // Get the hosts at target position in list
+                Host host1 = tour.getHost(tourPos1);
+                Host host2 = tour.getHost(tourPos2);
 
                 // Swap them around
-                tour.setHost(tourPos2, city1);
-                tour.setHost(tourPos1, city2);
+                tour.setHost(tourPos2, host1);
+                tour.setHost(tourPos1, host2);
             }
         }
     }
