@@ -15,41 +15,39 @@ public class Ant {
 	protected int indice = 0;
 
 	protected int trail[];
-	protected ArrayList<Host> trailHost;
+	protected Host trailHost[];
 
-	protected boolean visited[];
 	protected boolean visitedHost[];
 
 	public Ant(int hostSize) {
 		this.hostSize = hostSize;
 		this.trail = new int[hostSize];
-		this.visited = new boolean[hostSize];
-		
-		trailHost = new ArrayList<Host>();
+
+		trailHost = new Host[hostSize];
 		visitedHost = new boolean[hostSize];
 	}
 
-	protected void atualizaIndice(){
-		Host h = trailHost.get(0);
-		trailHost.set(0, trailHost.get(indice));
-		trailHost.set(indice, h);
+	protected void atualizaIndice() {
+		Host h = trailHost[0];
+		trailHost[0] = trailHost[indice];
+		trailHost[indice] = h;
 	}
 
 	protected void visitMachine(int currentIndex, int indHost, ArrayList<Host> host) {
-		trailHost.add(currentIndex + 1, host.get(indHost));
+		trailHost[currentIndex + 1] = host.get(indHost);
 
 		visitedHost[indHost] = true;
 	}
 
 	protected boolean visited(int i) {
-		return visited[i];
+		return visitedHost[i];
 	}
 
-	public double calculaFitness(Vm vm, ArrayList<Host> hosts) {
+	public double calculaFitness(Vm vm, Host[] hosts) {
 		double fitness = 0;
 
-		for (int i = 0; i < hosts.size(); i++) {
-			Host host = hosts.get(i);
+		for (int i = 0; i < hosts.length; i++) {
+			Host host = hosts[i];
 			List<Pe> coreDisponivel = calculaPe(host, vm);
 
 			double fit = (host.getTotalAvailableMips() / vm.getCurrentRequestedTotalMips())
@@ -90,7 +88,6 @@ public class Ant {
 
 	protected void clear() {
 		for (int i = 0; i < hostSize; i++)
-			visited[i] = false;
+			visitedHost[i] = false;
 	}
-
 }

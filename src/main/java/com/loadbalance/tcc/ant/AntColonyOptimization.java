@@ -35,14 +35,13 @@ public class AntColonyOptimization {
 
     private int currentIndex;
 
-    private List<Host> bestTourOrder;
+    private Host[] bestTourOrder;
     private double bestHostFit;
 
-    public AntColonyOptimization(int noOfCities, List<Host> lHosts) {
-        graph = generateRandomMatrix(noOfCities, lHosts);
+    public AntColonyOptimization(int noOfHosts, List<Host> lHosts) {
+        graph = generateRandomMatrix(noOfHosts, lHosts);
 
         numberOfHosts = hosts.size();
-        numberOfHosts = graph.length;
         numberOfAnts = (int) (numberOfHosts * antFactor);
 
         trails = new double[numberOfHosts][numberOfHosts];
@@ -69,8 +68,8 @@ public class AntColonyOptimization {
      * 
      * @return
      */
-    public List<Host> startAntOptimization(Vm vm) {
-        List<Host> result = solve(vm);
+    public Host[] startAntOptimization(Vm vm) {
+        Host[] result = solve(vm);
 
         return result;
     }
@@ -78,7 +77,7 @@ public class AntColonyOptimization {
     /**
      * Use this method to run the main logic
      */
-    public List<Host> solve(Vm vm) {
+    public Host[] solve(Vm vm) {
         setupAnts();
         clearTrails();
         IntStream.range(0, maxIterations).forEach(i -> {
@@ -91,7 +90,7 @@ public class AntColonyOptimization {
     }
 
     /**
-     * Prepare ants for the simulation
+     * Prepare hosts for the simulation
      */
     private void setupAnts() {
         IntStream.range(0, numberOfAnts).forEach(i -> {
@@ -114,7 +113,7 @@ public class AntColonyOptimization {
     }
 
     /**
-     * Select next city for each ant
+     * Select next host for each ant
      */
     private int selectNextHost(Ant ant) {
         int t = random.nextInt(numberOfHosts - currentIndex);
@@ -135,11 +134,11 @@ public class AntColonyOptimization {
             }
         }
 
-        throw new RuntimeException("There are no other cities");
+        throw new RuntimeException("There are no other hosts");
     }
 
     /**
-     * Calculate the next city picks probabilites
+     * Calculate the next hosts picks probabilites
      */
     public void calculateProbabilities(Ant ant) {
         int i = ant.trail[currentIndex];
@@ -169,7 +168,7 @@ public class AntColonyOptimization {
             }
         }
         for (Ant a : ants) {
-            double contribution = Q / a.calculaFitness(vm, hosts);
+            double contribution = a.calculaFitness(vm, a.trailHost) / Q;
 
             for (int i = 0; i < numberOfHosts - 1; i++) {
                 trails[a.trail[i]][a.trail[i + 1]] += contribution;
@@ -184,12 +183,14 @@ public class AntColonyOptimization {
     private void updateBest(Vm vm) {
         if (bestTourOrder == null) {
             bestTourOrder = ants.get(0).trailHost;
-            bestHostFit = ants.get(0).calculaFitness(vm, hosts);
+            bestHostFit = ants.get(0).calculaFitness(vm, bestTourOrder);
+            ants.get(0).atualizaIndice();
+            bestTourOrder = ants.get(0).trailHost;
         }
 
         for (Ant a : ants) {
             double fit = a.calculaFitness(vm, a.trailHost);
-            if (fit < bestHostFit) {
+            if (fit > bestHostFit) {
                 bestHostFit = fit;
                 a.atualizaIndice();
                 bestTourOrder = a.trailHost;

@@ -15,12 +15,12 @@ public class BalanceadorAnt extends VmAllocationPolicyAbstract {
         final List<Host> hostList = getHostList();
 
         AntColonyOptimization ant = new AntColonyOptimization(hostList.size(), hostList);
-        ArrayList<Host> x = new ArrayList<>();
-        x.addAll(ant.startAntOptimization(vm));
+
+        Host[] h = ant.startAntOptimization(vm);
 
         // Print final results
         System.out.println("Finished");
 
-        return Optional.of(x.get(0));
+        return Optional.of(h[0]);
     }
 }
