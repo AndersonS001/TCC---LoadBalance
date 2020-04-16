@@ -1,6 +1,7 @@
 package com.loadbalance.tcc.ag;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.cloudbus.cloudsim.hosts.Host;
 
@@ -12,6 +13,11 @@ public class MachineManager {
     // Adds a destination host
     public static void addHost(Host host) {
         hosts.add(host);
+    }
+
+    public static void addHost(List<Host> host) {
+        hosts.clear();
+        hosts.addAll(host);
     }
     
     // Get a host

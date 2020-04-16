@@ -10,6 +10,7 @@ import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple;
 import org.cloudbus.cloudsim.cloudlets.Cloudlet;
 import org.cloudbus.cloudsim.cloudlets.CloudletSimple;
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.datacenters.Datacenter;
 import org.cloudbus.cloudsim.datacenters.DatacenterSimple;
 import org.cloudbus.cloudsim.hosts.Host;
@@ -26,14 +27,14 @@ import org.cloudsimplus.builders.tables.CloudletsTableBuilder;
  */
 public class AntColonyMain {
 
-    private static final int HOSTS = 25;
-    private static final int HOST_PES = 8;
+    private static final int HOSTS = 250;
+    private static final int HOST_PES = 12;
 
-    private static final int VMS = 40;
-    private static final int VM_PES = 2;
+    private static final int VMS = 400;
+    private static final int VM_PES = 4;
 
-    private static final int CLOUDLETS = 8;
-    private static final int CLOUDLET_PES = 2;
+    private static final int CLOUDLETS = 10;
+    private static final int CLOUDLET_PES = 1;
     private static final int CLOUDLET_LENGTH = 100;
 
     private final CloudSim simulation;
@@ -61,6 +62,14 @@ public class AntColonyMain {
 
         simulation.start();
 
+        // List<SimEntity> xxxx = simulation.getEntityList();
+        // DatacenterSimple dcc = (DatacenterSimple) xxxx.get(1);
+        // List<Host> ddd = new ArrayList<>();
+        // for (Host host : dcc.getHostList()) {
+        //     if (host.isActive())
+        //         ddd.add(host);
+        // }
+
         final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
         finishedCloudlets.sort(Comparator.comparingLong(cloudlet -> cloudlet.getVm().getId()));
         new CloudletsTableBuilder(finishedCloudlets).build();
@@ -84,12 +93,12 @@ public class AntColonyMain {
         // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
             // Uses a PeProvisionerSimple by default to provision PEs for VMs
-            peList.add(new PeSimple(new Random().nextInt(2000)));
+            peList.add(new PeSimple((0.1 + new Random().nextDouble()) * 6000));
         }
 
-        final long ram = (long) (new Random().nextDouble() * 3500); // in Megabytes
-        final long bw = (long) (new Random().nextDouble() * 15000); // in Megabits/s
-        final long storage = (long) (new Random().nextDouble() * 15000); // in Megabytes
+        final long ram = (long) ((0.5 + new Random().nextDouble()) * 30000); // in Megabytes
+        final long bw = (long) ((0.5 + new Random().nextDouble()) * 60000); // in Megabits/s
+        final long storage = (long) ((0.1 + new Random().nextDouble()) * 15000); // in Megabytes
 
         /*
          * Uses ResourceProvisionerSimple by default for RAM and BW provisioning and
@@ -103,11 +112,13 @@ public class AntColonyMain {
      */
     private List<Vm> createVms() {
         final List<Vm> list = new ArrayList<>(VMS);
+        int tam = 2400;
         for (int i = 0; i < VMS; i++) {
             // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
-            final Vm vm = new VmSimple(new Random().nextInt(666), VM_PES);
-            vm.setRam(new Random().nextInt(666) + 1).setBw(new Random().nextInt(666) + 1)
-                    .setSize(new Random().nextInt(666) + 1);
+            final Vm vm = new VmSimple((0.1 + new Random().nextDouble()) * tam, VM_PES);
+            vm.setRam((long) ((0.5 + new Random().nextDouble()) * 2 * tam))
+                    .setBw((long) ((0.5 + new Random().nextDouble()) * 2 * tam))
+                    .setSize((long) ((0.1 + new Random().nextDouble()) * tam));
             list.add(vm);
         }
 
@@ -126,7 +137,7 @@ public class AntColonyMain {
 
         for (int i = 0; i < CLOUDLETS; i++) {
             final Cloudlet cloudlet = new CloudletSimple(CLOUDLET_LENGTH, CLOUDLET_PES, utilizationModel);
-            cloudlet.setSizes(new Random().nextInt(1000));
+            cloudlet.setSizes(new Random().nextInt(100) + 1);
             list.add(cloudlet);
         }
 

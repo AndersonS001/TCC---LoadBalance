@@ -126,7 +126,7 @@ public class AlgoritmoGeneticoMain {
 
         for (int i = 0; i < CLOUDLETS; i++) {
             final Cloudlet cloudlet = new CloudletSimple(CLOUDLET_LENGTH, CLOUDLET_PES, utilizationModel);
-            cloudlet.setSizes(new Random().nextInt(1000));
+            cloudlet.setSizes(new Random().nextInt(1000) + 1);
             list.add(cloudlet);
         }
 
