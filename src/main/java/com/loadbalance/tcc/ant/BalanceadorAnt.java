@@ -17,9 +17,6 @@ public class BalanceadorAnt extends VmAllocationPolicyAbstract {
 
         Host[] h = ant.startAntOptimization(vm);
 
-        // Print final results
-        System.out.println("Finished");
-
         return Optional.of(h[0]);
     }
 }

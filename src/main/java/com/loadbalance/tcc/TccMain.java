@@ -32,9 +32,9 @@ public class TccMain {
     private static final int VMS = 400;
     private static final int VM_PES = 4;
 
-    private static final int CLOUDLETS = 10;
+    private static final int CLOUDLETS = 500;
     private static final int CLOUDLET_PES = 1;
-    private static final int CLOUDLET_LENGTH = 100;
+    private static final int CLOUDLET_LENGTH = 1000;
 
     private static CloudSim simulation;
 
@@ -65,14 +65,20 @@ public class TccMain {
         }
     }
 
-    private static void BalanceadorAG(){
+    private static void BalanceadorAG() {
+        long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAg());
         new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets());
+        long tempoFim = System.currentTimeMillis();
+        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAnt() {
+        long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAnt());
         new AntColonyMain(simulation, createVms(), createCloudlets());
+        long tempoFim = System.currentTimeMillis();
+        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
     }
 
     /**
@@ -133,11 +139,11 @@ public class TccMain {
 
         // UtilizationModel defining the Cloudlets use only 50% of any resource all the
         // time
-        final UtilizationModelDynamic utilizationModel = new UtilizationModelDynamic(0.5);
+        final UtilizationModelDynamic utilizationModel = new UtilizationModelDynamic(0.7);
 
         for (int i = 0; i < CLOUDLETS; i++) {
             final Cloudlet cloudlet = new CloudletSimple(CLOUDLET_LENGTH, CLOUDLET_PES, utilizationModel);
-            cloudlet.setSizes(new Random().nextInt(100) + 1);
+            cloudlet.setSizes(new Random().nextInt(1000) + 1);
             list.add(cloudlet);
         }
 
