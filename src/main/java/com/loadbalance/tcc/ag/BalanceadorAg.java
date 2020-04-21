@@ -13,20 +13,11 @@ public class BalanceadorAg extends VmAllocationPolicyAbstract {
     protected Optional<Host> defaultFindHostForVm(final Vm vm) {
         final List<Host> hostList = getHostList();
 
-        MachineManager.limpaHost();
+        MachineManager.addHost(hostList);
 
-        for (Host host : hostList) {
-            MachineManager.addHost(host);
-        }
+        Population pop = new Population(25, true);
 
-        Population pop = new Population(50, true);
-
-        for (int i = 0; i < 50; i++) {
-            pop = GA.evolvePopulation(pop, vm);
-        }
-
-        // Print final results
-        System.out.println("Finished");
+        pop = GA.evolvePopulation(pop, vm);
 
         Balanceamento p = pop.getFittest(vm);
 

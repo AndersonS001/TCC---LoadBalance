@@ -1,12 +1,16 @@
-package com.loadbalance.tcc.ant;
+package com.loadbalance.tcc;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
-import org.cloudbus.cloudsim.brokers.DatacenterBroker;
-import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple;
+import com.loadbalance.tcc.ag.AlgoritmoGeneticoMain;
+import com.loadbalance.tcc.ag.BalanceadorAg;
+import com.loadbalance.tcc.ant.AntColonyMain;
+import com.loadbalance.tcc.ant.BalanceadorAnt;
+
+import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicy;
 import org.cloudbus.cloudsim.cloudlets.Cloudlet;
 import org.cloudbus.cloudsim.cloudlets.CloudletSimple;
 import org.cloudbus.cloudsim.core.CloudSim;
@@ -19,12 +23,8 @@ import org.cloudbus.cloudsim.resources.PeSimple;
 import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelDynamic;
 import org.cloudbus.cloudsim.vms.Vm;
 import org.cloudbus.cloudsim.vms.VmSimple;
-import org.cloudsimplus.builders.tables.CloudletsTableBuilder;
 
-/**
- * AlgoritmoGenetico
- */
-public class AntColonyMain {
+public class TccMain {
 
     private static final int HOSTS = 250;
     private static final int HOST_PES = 12;
@@ -36,84 +36,59 @@ public class AntColonyMain {
     private static final int CLOUDLET_PES = 1;
     private static final int CLOUDLET_LENGTH = 100;
 
-    private final CloudSim simulation;
-    private DatacenterBroker broker0;
-    private List<Vm> vmList;
-    private List<Cloudlet> cloudletList;
+    private static CloudSim simulation;
 
     public static void main(String[] args) {
-        new AntColonyMain();
-    }
-
-    public AntColonyMain(CloudSim cloud, List<Vm> listaVms, List<Cloudlet> listaCloulet) {
-        simulation = cloud;
-
-        vmList = listaVms;
-        cloudletList = listaCloulet;
-
-        broker0 = new DatacenterBrokerSimple(simulation);
-        
-        broker0.submitVmList(vmList);
-        broker0.submitCloudletList(cloudletList);
-
-        simulation.start();
-
-        // List<SimEntity> xxxx = simulation.getEntityList();
-        // DatacenterSimple dcc = (DatacenterSimple) xxxx.get(1);
-        // List<Host> ddd = new ArrayList<>();
-        // for (Host host : dcc.getHostList()) {
-        // if (host.isActive())
-        // ddd.add(host);
-        // }
-
-        final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
-        finishedCloudlets.sort(Comparator.comparingLong(cloudlet -> cloudlet.getVm().getId()));
-        new CloudletsTableBuilder(finishedCloudlets).build();
-    }
-
-    private AntColonyMain() {
         simulation = new CloudSim();
 
-        vmList = createVms();
-        cloudletList = createCloudlets();
-        createDatacenter();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Bem vindo, deseja simular qual algoritmo:");
+        System.out.println("1 - Algoritmo Genético");
+        System.out.println("2 - Ant Colony");
+        System.out.println("3 - Firefly");
 
-        // Creates a broker that is a software acting on behalf a cloud customer to
-        // manage his/her VMs and Cloudlets
-        broker0 = new DatacenterBrokerSimple(simulation);
+        int decision = in.nextInt();
 
-        broker0.submitVmList(vmList);
-        broker0.submitCloudletList(cloudletList);
+        switch (decision) {
+            case 1:
+                in.close();
+                BalanceadorAG();
+                break;
+            case 2:
+                in.close();
+                BalanceadorAnt();
+                break;
+            default:
+                System.out.println("Unknown option");
+                in.close();
+                break;
+        }
+    }
 
-        simulation.start();
+    private static void BalanceadorAG(){
+        createDatacenter(new BalanceadorAg());
+        new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets());
+    }
 
-        // List<SimEntity> xxxx = simulation.getEntityList();
-        // DatacenterSimple dcc = (DatacenterSimple) xxxx.get(1);
-        // List<Host> ddd = new ArrayList<>();
-        // for (Host host : dcc.getHostList()) {
-        // if (host.isActive())
-        // ddd.add(host);
-        // }
-
-        final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
-        finishedCloudlets.sort(Comparator.comparingLong(cloudlet -> cloudlet.getVm().getId()));
-        new CloudletsTableBuilder(finishedCloudlets).build();
+    private static void BalanceadorAnt() {
+        createDatacenter(new BalanceadorAnt());
+        new AntColonyMain(simulation, createVms(), createCloudlets());
     }
 
     /**
      * Creates a Datacenter and its Hosts.
      */
-    private Datacenter createDatacenter() {
+    private static Datacenter createDatacenter(VmAllocationPolicy vmAllocationPolicy) {
         final List<Host> hostList = new ArrayList<>(HOSTS);
         for (int i = 0; i < HOSTS; i++) {
             Host host = createHost();
             hostList.add(host);
         }
 
-        return new DatacenterSimple(simulation, hostList, new BalanceadorAnt());
+        return new DatacenterSimple(simulation, hostList, vmAllocationPolicy);
     }
 
-    private Host createHost() {
+    private static Host createHost() {
         final List<Pe> peList = new ArrayList<>(HOST_PES);
         // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
@@ -135,7 +110,7 @@ public class AntColonyMain {
     /**
      * Creates a list of VMs.
      */
-    private List<Vm> createVms() {
+    private static List<Vm> createVms() {
         final List<Vm> list = new ArrayList<>(VMS);
         int tam = 2400;
         for (int i = 0; i < VMS; i++) {
@@ -153,7 +128,7 @@ public class AntColonyMain {
     /**
      * Creates a list of Cloudlets.
      */
-    private List<Cloudlet> createCloudlets() {
+    private static List<Cloudlet> createCloudlets() {
         final List<Cloudlet> list = new ArrayList<>(CLOUDLETS);
 
         // UtilizationModel defining the Cloudlets use only 50% of any resource all the
