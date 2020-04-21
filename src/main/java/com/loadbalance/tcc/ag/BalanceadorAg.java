@@ -19,9 +19,6 @@ public class BalanceadorAg extends VmAllocationPolicyAbstract {
 
         pop = GA.evolvePopulation(pop, vm);
 
-        // Print final results
-        System.out.println("Finished");
-
         Balanceamento p = pop.getFittest(vm);
 
         return Optional.of(p.getMaquinaOficial());

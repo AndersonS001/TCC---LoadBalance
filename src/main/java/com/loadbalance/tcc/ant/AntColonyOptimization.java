@@ -36,7 +36,6 @@ public class AntColonyOptimization {
     private int currentIndex;
 
     private Host[] bestTourOrder;
-    private double bestHostFit;
 
     public AntColonyOptimization(int noOfHosts, List<Host> lHosts) {
         graph = generateRandomMatrix(noOfHosts, lHosts);
@@ -183,7 +182,6 @@ public class AntColonyOptimization {
     private void updateBest(Vm vm) {
         if (bestTourOrder == null) {
             bestTourOrder = ants.get(0).trailHost;
-            bestHostFit = ants.get(0).calculaFitness(vm, bestTourOrder);
             ants.get(0).atualizaIndice();
             bestTourOrder = ants.get(0).trailHost;
         }

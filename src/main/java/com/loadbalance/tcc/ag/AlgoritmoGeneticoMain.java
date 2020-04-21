@@ -45,6 +45,31 @@ public class AlgoritmoGeneticoMain {
         new AlgoritmoGeneticoMain();
     }
 
+    public AlgoritmoGeneticoMain(CloudSim cloud, List<Vm> listaVms, List<Cloudlet> listaCloulet) {
+        simulation = cloud;
+        vmList = listaVms;
+        cloudletList = listaCloulet;
+
+        broker0 = new DatacenterBrokerSimple(simulation);
+        
+        broker0.submitVmList(vmList);
+        broker0.submitCloudletList(cloudletList);
+
+        simulation.start();
+
+        // List<SimEntity> xxxx = simulation.getEntityList();
+        // DatacenterSimple dcc = (DatacenterSimple) xxxx.get(1);
+        // List<Host> ddd = new ArrayList<>();
+        // for (Host host : dcc.getHostList()) {
+        // if (host.isActive())
+        // ddd.add(host);
+        // }
+
+        final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
+        finishedCloudlets.sort(Comparator.comparingLong(cloudlet -> cloudlet.getVm().getId()));
+        new CloudletsTableBuilder(finishedCloudlets).build();
+    }
+
     private AlgoritmoGeneticoMain() {
         simulation = new CloudSim();
 
