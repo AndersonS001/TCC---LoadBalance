@@ -19,7 +19,7 @@ public class AntColonyOptimization {
     private double antFactor = 0.2;
     private double randomFactor = 0.15;
 
-    private int maxIterations = 20;
+    private int maxIterations = 2;
 
     private int numberOfHosts;
     private int numberOfAnts;
@@ -41,7 +41,9 @@ public class AntColonyOptimization {
         graph = generateRandomMatrix(noOfHosts, lHosts);
 
         numberOfHosts = hosts.size();
-        numberOfAnts = (int) (numberOfHosts * antFactor);
+        int numberOfAntsAux = (int) (numberOfHosts * antFactor);
+
+        numberOfAnts = (numberOfAntsAux > 12) ? 12 : numberOfAntsAux;
 
         trails = new double[numberOfHosts][numberOfHosts];
         probabilities = new double[numberOfHosts];
@@ -187,12 +189,12 @@ public class AntColonyOptimization {
         }
 
         // for (Ant a : ants) {
-        //     double fit = a.calculaFitness(vm, a.trailHost);
-        //     if (fit > bestHostFit) {
-        //         bestHostFit = fit;
-        //         a.atualizaIndice();
-        //         bestTourOrder = a.trailHost;
-        //     }
+        // double fit = a.calculaFitness(vm, a.trailHost);
+        // if (fit > bestHostFit) {
+        // bestHostFit = fit;
+        // a.atualizaIndice();
+        // bestTourOrder = a.trailHost;
+        // }
         // }
     }
 
