@@ -68,7 +68,6 @@ public class FANormal implements FireflyAlgorithm {
 
 	@Override
 	public void initPop() {
-		System.out.println("**********��Ⱥ��ʼ��**********");
 		fireflies = new ArrayList<>();
 		for (int i = 0; i < popNum; i++) {
 			fireflies.add(new Firefly(new Position(this.dim, objectiveFun.getRange()), hostList));
@@ -144,6 +143,7 @@ public class FANormal implements FireflyAlgorithm {
 							+ attraction * (codej[ind] - codei[ind]) + alpha * (random.nextDouble() - 0.5) * scale[ind])
 							.toArray();
 					fireflyi.getPosition().setPositionCode(newPositionCode);
+					hostList = fireflyi.atualizaIndice(indice);
 				}
 			}
 		}
@@ -154,7 +154,6 @@ public class FANormal implements FireflyAlgorithm {
 				i -> bestFirefly.getPosition().getPositionCode()[i] + alpha * (random.nextDouble() - 0.5) * scale[i])
 				.toArray();
 		bestFirefly.getPosition().setPositionCode(newPositionCode);
-		hostList = bestFirefly.atualizaIndice(indice);
 	}
 
 	@SuppressWarnings("unchecked")

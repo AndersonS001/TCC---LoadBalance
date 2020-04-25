@@ -14,15 +14,11 @@ public class BalanceadorFirefly extends VmAllocationPolicyAbstract {
         final List<Host> hostList = getHostList();
 
         ObjectiveFun objectiveFun = new ObjectiveFun();
-        FANormal faNormal = FANormal.builder().popNum(10).maxGen(20).dim(2).alpha(0.2).initAttraction(1.0).gamma(1.0)
+        FANormal faNormal = FANormal.builder().popNum(7).maxGen(10).dim(2).alpha(0.2).initAttraction(1.0).gamma(1.0)
                 .isAdaptive(true).objectiveFun(objectiveFun).hostList(hostList).build();
 
         Host h = faNormal.start(vm);
 
         return Optional.of(h);
-
-        // Host[] h = ant.startAntOptimization(vm);
-
-        // return Optional.of(h[0]);
     }
 }
