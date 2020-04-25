@@ -9,6 +9,8 @@ import com.loadbalance.tcc.ag.AlgoritmoGeneticoMain;
 import com.loadbalance.tcc.ag.BalanceadorAg;
 import com.loadbalance.tcc.ant.AntColonyMain;
 import com.loadbalance.tcc.ant.BalanceadorAnt;
+import com.loadbalance.tcc.firefly.BalanceadorFirefly;
+import com.loadbalance.tcc.firefly.FireflyMain;
 
 import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicy;
 import org.cloudbus.cloudsim.cloudlets.Cloudlet;
@@ -58,6 +60,10 @@ public class TccMain {
                 in.close();
                 BalanceadorAnt();
                 break;
+            case 3:
+                in.close();
+                BalanceadorFirefly();
+                break;
             default:
                 System.out.println("Unknown option");
                 in.close();
@@ -77,6 +83,14 @@ public class TccMain {
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAnt());
         new AntColonyMain(simulation, createVms(), createCloudlets());
+        long tempoFim = System.currentTimeMillis();
+        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+    }
+
+    private static void BalanceadorFirefly() {
+        long tempoInicio = System.currentTimeMillis();
+        createDatacenter(new BalanceadorFirefly());
+        new FireflyMain(simulation, createVms(), createCloudlets());
         long tempoFim = System.currentTimeMillis();
         System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
     }
