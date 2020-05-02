@@ -1,5 +1,9 @@
 package com.loadbalance.tcc;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -9,6 +13,7 @@ import com.loadbalance.tcc.ag.AlgoritmoGeneticoMain;
 import com.loadbalance.tcc.ag.BalanceadorAg;
 import com.loadbalance.tcc.ant.AntColonyMain;
 import com.loadbalance.tcc.ant.BalanceadorAnt;
+import com.loadbalance.tcc.eventos.Dados;
 import com.loadbalance.tcc.firefly.BalanceadorFirefly;
 import com.loadbalance.tcc.firefly.FireflyMain;
 
@@ -28,20 +33,21 @@ import org.cloudbus.cloudsim.vms.VmSimple;
 
 public class TccMain {
 
-    private static final int HOSTS = 250;
-    private static final int HOST_PES = 12;
+    private static final int HOSTS = 200;
+    private static final int HOST_PES = 6;
 
     private static final int VMS = 400;
-    private static final int VM_PES = 4;
+    private static final int VM_PES = 2;
 
-    private static final int CLOUDLETS = 500;
+    private static final int CLOUDLETS = 0;
     private static final int CLOUDLET_PES = 1;
     private static final int CLOUDLET_LENGTH = 1000;
 
     private static CloudSim simulation;
 
-    public static void main(String[] args) {
-        simulation = new CloudSim();
+    private static Dados dadosSimulacao;
+
+    public static void main(String[] args) throws IOException {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Bem vindo, deseja simular qual algoritmo:");
@@ -50,33 +56,53 @@ public class TccMain {
         System.out.println("3 - Firefly");
 
         int decision = in.nextInt();
+        // int decision = 1;
+        // for (int i = 0; i < 9; i++) {
+            dadosSimulacao = new Dados();
+            simulation = new CloudSim();
 
-        switch (decision) {
-            case 1:
-                in.close();
-                BalanceadorAG();
-                break;
-            case 2:
-                in.close();
-                BalanceadorAnt();
-                break;
-            case 3:
-                in.close();
-                BalanceadorFirefly();
-                break;
-            default:
-                System.out.println("Unknown option");
-                in.close();
-                break;
-        }
+            switch (decision) {
+                case 1:
+                    in.close();
+                    BalanceadorAG();
+                    break;
+                case 2:
+                    in.close();
+                    BalanceadorAnt();
+                    break;
+                case 3:
+                    in.close();
+                    BalanceadorFirefly();
+                    break;
+                default:
+                    System.out.println("Unknown option");
+                    in.close();
+                    break;
+            }
+
+            dadosSimulacao.TrataMaquina();
+            LogToFile(dadosSimulacao.toString());
+        // }
+
+    }
+
+    private static void LogToFile(String msg) throws IOException {
+        new File("dados.txt").createNewFile();
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter("dados.txt", true));
+        writer.newLine(); // Add new line
+        writer.write(msg);
+        writer.close();
     }
 
     private static void BalanceadorAG() {
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAg());
-        new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets());
+        new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+
+        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAnt() {
@@ -85,6 +111,8 @@ public class TccMain {
         new AntColonyMain(simulation, createVms(), createCloudlets());
         long tempoFim = System.currentTimeMillis();
         System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+
+        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorFirefly() {
@@ -93,6 +121,8 @@ public class TccMain {
         new FireflyMain(simulation, createVms(), createCloudlets());
         long tempoFim = System.currentTimeMillis();
         System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+
+        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
 
     /**
@@ -113,12 +143,12 @@ public class TccMain {
         // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
             // Uses a PeProvisionerSimple by default to provision PEs for VMs
-            peList.add(new PeSimple((0.1 + new Random().nextDouble()) * 6000));
+            peList.add(new PeSimple((0.3 + new Random().nextDouble()) * 3000));
         }
 
-        final long ram = (long) ((0.5 + new Random().nextDouble()) * 30000); // in Megabytes
-        final long bw = (long) ((0.5 + new Random().nextDouble()) * 60000); // in Megabits/s
-        final long storage = (long) ((0.1 + new Random().nextDouble()) * 15000); // in Megabytes
+        final long ram = (long) ((0.3 + new Random().nextDouble()) * 30000); // in Megabytes
+        final long bw = (long) ((0.2 + new Random().nextDouble()) * 25000); // in Megabits/s
+        final long storage = (long) ((0.2 + new Random().nextDouble()) * 15000); // in Megabytes
 
         /*
          * Uses ResourceProvisionerSimple by default for RAM and BW provisioning and
@@ -137,7 +167,7 @@ public class TccMain {
             // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
             final Vm vm = new VmSimple((0.1 + new Random().nextDouble()) * tam, VM_PES);
             vm.setRam((long) ((0.5 + new Random().nextDouble()) * 2 * tam))
-                    .setBw((long) ((0.5 + new Random().nextDouble()) * 2 * tam))
+                    .setBw((long) ((0.3 + new Random().nextDouble()) * 2 * tam))
                     .setSize((long) ((0.1 + new Random().nextDouble()) * tam));
             list.add(vm);
         }
