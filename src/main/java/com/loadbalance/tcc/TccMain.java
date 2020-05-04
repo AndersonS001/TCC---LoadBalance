@@ -16,6 +16,8 @@ import com.loadbalance.tcc.ant.BalanceadorAnt;
 import com.loadbalance.tcc.eventos.Dados;
 import com.loadbalance.tcc.firefly.BalanceadorFirefly;
 import com.loadbalance.tcc.firefly.FireflyMain;
+import com.loadbalance.tcc.rr.BalanceadorRoundRobin;
+import com.loadbalance.tcc.rr.RoundRobinMain;
 
 import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicy;
 import org.cloudbus.cloudsim.cloudlets.Cloudlet;
@@ -33,11 +35,11 @@ import org.cloudbus.cloudsim.vms.VmSimple;
 
 public class TccMain {
 
-    private static final int HOSTS = 200;
-    private static final int HOST_PES = 6;
+    private static final int HOSTS = 250;
+    private static final int HOST_PES = 8;
 
-    private static final int VMS = 400;
-    private static final int VM_PES = 2;
+    private static final int VMS = 500;
+    private static final int VM_PES = 1;
 
     private static final int CLOUDLETS = 0;
     private static final int CLOUDLET_PES = 1;
@@ -55,34 +57,38 @@ public class TccMain {
         System.out.println("2 - Ant Colony");
         System.out.println("3 - Firefly");
 
-        int decision = in.nextInt();
-        // int decision = 1;
-        // for (int i = 0; i < 9; i++) {
-            dadosSimulacao = new Dados();
-            simulation = new CloudSim();
+        // int decision = in.nextInt();
+        for (int j = 1; j <= 4; j++) {
+            int decision = j;
+            LogToFile("Algoritmo " + j);
 
-            switch (decision) {
-                case 1:
-                    in.close();
-                    BalanceadorAG();
-                    break;
-                case 2:
-                    in.close();
-                    BalanceadorAnt();
-                    break;
-                case 3:
-                    in.close();
-                    BalanceadorFirefly();
-                    break;
-                default:
-                    System.out.println("Unknown option");
-                    in.close();
-                    break;
+            for (int i = 0; i < 100; i++) {
+                dadosSimulacao = new Dados();
+                simulation = new CloudSim();
+
+                switch (decision) {
+                    case 1:
+                        in.close();
+                        BalanceadorAG();
+                        break;
+                    case 2:
+                        in.close();
+                        BalanceadorAnt();
+                        break;
+                    case 3:
+                        in.close();
+                        BalanceadorFirefly();
+                        break;
+                    default:
+                        in.close();
+                        BalanceadorRR();
+                        break;
+                }
+
+                dadosSimulacao.TrataMaquina();
+                LogToFile(dadosSimulacao.toString());
             }
-
-            dadosSimulacao.TrataMaquina();
-            LogToFile(dadosSimulacao.toString());
-        // }
+        }
 
     }
 
@@ -93,6 +99,15 @@ public class TccMain {
         writer.newLine(); // Add new line
         writer.write(msg);
         writer.close();
+    }
+
+    private static void BalanceadorRR() {
+        long tempoInicio = System.currentTimeMillis();
+        createDatacenter(new BalanceadorRoundRobin());
+        new RoundRobinMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
+        long tempoFim = System.currentTimeMillis();
+
+        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAG() {
@@ -108,9 +123,9 @@ public class TccMain {
     private static void BalanceadorAnt() {
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAnt());
-        new AntColonyMain(simulation, createVms(), createCloudlets());
+        new AntColonyMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
 
         dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
@@ -118,9 +133,9 @@ public class TccMain {
     private static void BalanceadorFirefly() {
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorFirefly());
-        new FireflyMain(simulation, createVms(), createCloudlets());
+        new FireflyMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
+        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
 
         dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
     }
@@ -147,7 +162,7 @@ public class TccMain {
         }
 
         final long ram = (long) ((0.3 + new Random().nextDouble()) * 30000); // in Megabytes
-        final long bw = (long) ((0.2 + new Random().nextDouble()) * 25000); // in Megabits/s
+        final long bw = (long) ((0.3 + new Random().nextDouble()) * 28000); // in Megabits/s
         final long storage = (long) ((0.2 + new Random().nextDouble()) * 15000); // in Megabytes
 
         /*

@@ -5,11 +5,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
+import com.loadbalance.tcc.eventos.Dados;
+
 import org.cloudbus.cloudsim.brokers.DatacenterBroker;
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple;
 import org.cloudbus.cloudsim.cloudlets.Cloudlet;
 import org.cloudbus.cloudsim.cloudlets.CloudletSimple;
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.datacenters.Datacenter;
 import org.cloudbus.cloudsim.datacenters.DatacenterSimple;
 import org.cloudbus.cloudsim.hosts.Host;
@@ -38,14 +41,18 @@ public class FireflyMain {
     private List<Vm> vmList;
     private List<Cloudlet> cloudletList;
 
+    private Dados dadosSimulacao;
+
     public static void main(String[] args) {
         new FireflyMain();
     }
 
-    public FireflyMain(CloudSim cloud, List<Vm> listaVms, List<Cloudlet> listaCloulet) {
+    public FireflyMain(CloudSim cloud, List<Vm> listaVms, List<Cloudlet> listaCloulet, Dados dadosSimulacao) {
         simulation = cloud;
         vmList = listaVms;
         cloudletList = listaCloulet;
+
+        this.dadosSimulacao = dadosSimulacao;
 
         broker0 = new DatacenterBrokerSimple(simulation);
         
@@ -54,19 +61,20 @@ public class FireflyMain {
 
         simulation.start();
 
-        // List<SimEntity> xxxx = simulation.getEntityList();
-        // DatacenterSimple dcc = (DatacenterSimple) xxxx.get(1);
-        // List<Host> ddd = new ArrayList<>();
-        // for (Host host : dcc.getHostList()) {
-        // if (host.isActive())
-        // ddd.add(host);
-        // }
-
-        final List<Cloudlet> finishedCloudlets = broker0.getCloudletFinishedList();
-        finishedCloudlets.sort(Comparator.comparingLong(cloudlet -> cloudlet.getVm().getId()));
-        new CloudletsTableBuilder(finishedCloudlets).build();
+        CalculaHosts();
     }
 
+    private void CalculaHosts() {
+        List<SimEntity> entityList = simulation.getEntityList();
+        DatacenterSimple dcc = (DatacenterSimple) entityList.get(1);
+
+        List<Host> hostsAtivos = new ArrayList<>();
+        hostsAtivos.addAll(dcc.getHostList());
+        hostsAtivos.removeIf(x -> x.isActive() == false);
+
+        dadosSimulacao.setHostsAtivos(hostsAtivos);
+    }
+    
     private FireflyMain() {
         simulation = new CloudSim();
 
