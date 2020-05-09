@@ -88,6 +88,9 @@ public class FANormal implements FireflyAlgorithm {
 					* (coreDisponivel.size() / vm.getCurrentRequestedMips().size())
 					* (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw());
 
+			if (fit == 0)
+				hosts.remove(host);
+
 			if (fitness < fit) {
 				fitness = fit;
 				indice = i;
@@ -143,7 +146,7 @@ public class FANormal implements FireflyAlgorithm {
 							+ attraction * (codej[ind] - codei[ind]) + alpha * (random.nextDouble() - 0.5) * scale[ind])
 							.toArray();
 					fireflyi.getPosition().setPositionCode(newPositionCode);
-					hostList = fireflyi.atualizaIndice(indice);
+					hostList = fireflyi.atualizaIndice(indice, hostList);
 				}
 			}
 		}

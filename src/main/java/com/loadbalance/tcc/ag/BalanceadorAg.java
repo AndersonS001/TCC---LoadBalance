@@ -15,7 +15,7 @@ public class BalanceadorAg extends VmAllocationPolicyAbstract {
 
         MachineManager.addHost(hostList);
 
-        Population pop = new Population(13, true);
+        Population pop = new Population(8, true);
 
         pop = GA.evolvePopulation(pop, vm);
 

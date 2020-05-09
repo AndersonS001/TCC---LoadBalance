@@ -4,7 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -58,11 +58,11 @@ public class TccMain {
         System.out.println("3 - Firefly");
 
         // int decision = in.nextInt();
-        for (int j = 3; j <= 3; j++) {
+        for (int j = 1; j <= 4; j++) {
             int decision = j;
             LogToFile("Algoritmo " + j);
 
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 10; i++) {
                 dadosSimulacao = new Dados();
                 simulation = new CloudSim();
 
@@ -144,7 +144,7 @@ public class TccMain {
      * Creates a Datacenter and its Hosts.
      */
     private static Datacenter createDatacenter(VmAllocationPolicy vmAllocationPolicy) {
-        final List<Host> hostList = new ArrayList<>(HOSTS);
+        final List<Host> hostList = new LinkedList<Host>();
         for (int i = 0; i < HOSTS; i++) {
             Host host = createHost();
             hostList.add(host);
@@ -154,7 +154,7 @@ public class TccMain {
     }
 
     private static Host createHost() {
-        final List<Pe> peList = new ArrayList<>(HOST_PES);
+        final List<Pe> peList = new LinkedList<Pe>();
         // List of Host's CPUs (Processing Elements, PEs)
         for (int i = 0; i < HOST_PES; i++) {
             // Uses a PeProvisionerSimple by default to provision PEs for VMs
@@ -176,7 +176,7 @@ public class TccMain {
      * Creates a list of VMs.
      */
     private static List<Vm> createVms() {
-        final List<Vm> list = new ArrayList<>(VMS);
+        final List<Vm> list = new LinkedList<Vm>();
         int tam = 2400;
         for (int i = 0; i < VMS; i++) {
             // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
@@ -194,7 +194,7 @@ public class TccMain {
      * Creates a list of Cloudlets.
      */
     private static List<Cloudlet> createCloudlets() {
-        final List<Cloudlet> list = new ArrayList<>(CLOUDLETS);
+        final List<Cloudlet> list = new LinkedList<Cloudlet>();
 
         // UtilizationModel defining the Cloudlets use only 50% of any resource all the
         // time

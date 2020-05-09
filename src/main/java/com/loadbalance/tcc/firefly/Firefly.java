@@ -1,6 +1,7 @@
 package com.loadbalance.tcc.firefly;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -14,8 +15,8 @@ import lombok.Setter;
 @Getter
 public class Firefly implements Comparable {
 
-	private double light; 
-	private double maxAttraction; 
+	private double light;
+	private double maxAttraction;
 	private Position position;
 	private double[] moveDirection;
 	private Host[] hostList;
@@ -52,11 +53,13 @@ public class Firefly implements Comparable {
 		return "Firefly [ " + Arrays.toString(position.getPositionCode()) + ", light=" + light + "]";
 	}
 
-	protected List<Host> atualizaIndice(int indice) {
+	protected List<Host> atualizaIndice(int indice, List<Host> lHosts) {
+		hostList = lHosts.toArray(new Host[lHosts.size()]);
+
 		Host h = hostList[0];
 		hostList[0] = hostList[indice];
 		hostList[indice] = h;
 
-		return Arrays.asList(hostList);
+		return new LinkedList<Host>(Arrays.asList(hostList));
 	}
 }

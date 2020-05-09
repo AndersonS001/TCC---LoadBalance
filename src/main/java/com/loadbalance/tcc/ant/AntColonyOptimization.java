@@ -1,6 +1,7 @@
 package com.loadbalance.tcc.ant;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.OptionalInt;
 import java.util.Random;
@@ -18,7 +19,7 @@ public class AntColonyOptimization {
     private double Q = 500;
     private double randomFactor = 0.15;
 
-    private int maxIterations = 2;
+    private int maxIterations = 1;
 
     private int numberOfHosts;
     private int numberOfAnts;
@@ -26,7 +27,7 @@ public class AntColonyOptimization {
     private double bestHostFit;
 
     private double graph[][];
-    private ArrayList<Host> hosts = new ArrayList<Host>();
+    private LinkedList<Host> hosts = new LinkedList<Host>();
 
     private double trails[][];
 

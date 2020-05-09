@@ -2,6 +2,7 @@ package com.loadbalance.tcc.ant;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
@@ -34,7 +35,7 @@ public class Ant {
 		trailHost[indice] = h;
 	}
 
-	protected void visitMachine(int currentIndex, int indHost, ArrayList<Host> host) {
+	protected void visitMachine(int currentIndex, int indHost, LinkedList<Host> host) {
 		trailHost[currentIndex + 1] = host.get(indHost);
 
 		visitedHost[indHost] = true;

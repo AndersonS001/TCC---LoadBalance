@@ -1,6 +1,6 @@
 package com.loadbalance.tcc.eventos;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,7 +17,7 @@ public class Dados {
     private long TempoDeExecucaoSimulacao; // milisegundos
 
     @Exclude
-    private List<Host> hostsAtivos = new ArrayList<>();
+    private List<Host> hostsAtivos = new LinkedList<Host>();
 
     @Include
     public int QtdHostAtivos() {

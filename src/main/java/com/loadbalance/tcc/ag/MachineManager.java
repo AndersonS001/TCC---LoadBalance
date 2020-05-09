@@ -1,6 +1,6 @@
 package com.loadbalance.tcc.ag;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.cloudbus.cloudsim.hosts.Host;
@@ -8,7 +8,7 @@ import org.cloudbus.cloudsim.hosts.Host;
 public class MachineManager {
 
     // Holds our hosts
-    private static ArrayList<Host> hosts = new ArrayList<Host>();
+    private static LinkedList<Host> hosts = new LinkedList<Host>();
 
     // Adds a destination host
     public static void addHost(Host host) {

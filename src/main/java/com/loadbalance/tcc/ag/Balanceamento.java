@@ -3,6 +3,7 @@ package com.loadbalance.tcc.ag;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.cloudbus.cloudsim.hosts.Host;
@@ -10,7 +11,7 @@ import org.cloudbus.cloudsim.resources.Pe;
 import org.cloudbus.cloudsim.vms.Vm;
 
 public class Balanceamento {
-    private ArrayList<Host> hosts = new ArrayList<Host>();
+    private LinkedList<Host> hosts = new LinkedList<Host>();
     // Cache
     private double fitness = 0;
     private int indice = 0;
@@ -28,7 +29,7 @@ public class Balanceamento {
         }
     }
 
-    public Balanceamento(ArrayList<Host> hosts) {
+    public Balanceamento(LinkedList<Host> hosts) {
         this.hosts = hosts;
     }
 
