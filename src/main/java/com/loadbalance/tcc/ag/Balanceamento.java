@@ -22,6 +22,12 @@ public class Balanceamento {
         }
     }
 
+    public Balanceamento(int qtdHost) {
+        for (int i = 0; i < qtdHost; i++) {
+            hosts.add(null);
+        }
+    }
+
     public Balanceamento(ArrayList<Host> hosts) {
         this.hosts = hosts;
     }
@@ -72,6 +78,10 @@ public class Balanceamento {
                     * (coreDisponivel.size() / vm.getCurrentRequestedMips().size())
                     * (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw());
 
+            if (fit == 0) {
+                hosts.remove(host);
+            }
+
             if (fitness < fit) {
                 fitness = fit;
                 indice = i;
@@ -82,9 +92,10 @@ public class Balanceamento {
     }
 
     public List<Pe> calculaPe(Host host, Vm vm) {
-        final List<Pe> freePeList = host.getFreePeList();
         final List<Pe> selectedPes = new ArrayList<>();
+
         try {
+            final List<Pe> freePeList = host.getFreePeList();
             final Iterator<Pe> peIterator = freePeList.iterator();
             Pe pe = peIterator.next();
             for (final double mips : vm.getCurrentRequestedMips()) {
@@ -97,6 +108,7 @@ public class Balanceamento {
                 }
             }
         } catch (Exception e) {
+            System.out.println("ddd");
         }
 
         return selectedPes;

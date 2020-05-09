@@ -43,8 +43,11 @@ public class GA {
 
     // Applies crossover to a set of parents and creates offspring
     public static Balanceamento crossover(Balanceamento parent1, Balanceamento parent2) {
+        int hP1 = parent1.hostSize();
+        int hP2 = parent2.hostSize();
+
         // Create new child tour
-        Balanceamento child = new Balanceamento();
+        Balanceamento child = new Balanceamento((hP1 > hP2) ? hP2 : hP1);
 
         // Get start and end sub tour positions for parent1's tour
         int startPos = (int) (Math.random() * parent1.hostSize());
@@ -63,7 +66,7 @@ public class GA {
             }
         }
 
-        for (int i = 0; i < parent2.hostSize(); i++) {
+        for (int i = 0; i < child.hostSize(); i++) {
             // If child doesn't have the host add it
             if (!child.containsHost(parent2.getHost(i))) {
                 // Loop to find a spare position in the child's tour
@@ -76,7 +79,7 @@ public class GA {
                 }
             }
         }
-        
+
         return child;
     }
 

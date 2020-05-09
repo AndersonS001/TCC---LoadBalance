@@ -16,13 +16,14 @@ public class AntColonyOptimization {
     private double beta = 5;
     private double evaporation = 0.5;
     private double Q = 500;
-    private double antFactor = 0.2;
     private double randomFactor = 0.15;
 
     private int maxIterations = 2;
 
     private int numberOfHosts;
     private int numberOfAnts;
+
+    private double bestHostFit;
 
     private double graph[][];
     private ArrayList<Host> hosts = new ArrayList<Host>();
@@ -41,9 +42,8 @@ public class AntColonyOptimization {
         graph = generateRandomMatrix(noOfHosts, lHosts);
 
         numberOfHosts = hosts.size();
-        int numberOfAntsAux = (int) (numberOfHosts * antFactor);
 
-        numberOfAnts = (numberOfAntsAux > 12) ? 12 : numberOfAntsAux;
+        numberOfAnts = 3; 
 
         trails = new double[numberOfHosts][numberOfHosts];
         probabilities = new double[numberOfHosts];
@@ -84,7 +84,7 @@ public class AntColonyOptimization {
         IntStream.range(0, maxIterations).forEach(i -> {
             moveAnts();
             updateTrails(vm);
-            updateBest(vm);
+            // updateBest(vm);
         });
 
         return bestTourOrder;
@@ -168,34 +168,28 @@ public class AntColonyOptimization {
                 trails[i][j] *= evaporation;
             }
         }
-        for (Ant a : ants) {
-            double contribution = a.calculaFitness(vm, a.trailHost) / Q;
 
-            for (int i = 0; i < numberOfHosts - 1; i++) {
+        for (Ant a : ants) {
+            double fit = a.calculaFitness(vm, a.trailHost);
+            double contribution = fit / Q;
+
+            for (int i = 0; i < a.trailHost.length - 1; i++) {
                 trails[a.trail[i]][a.trail[i + 1]] += contribution;
             }
-            trails[a.trail[numberOfHosts - 1]][a.trail[0]] += contribution;
-        }
-    }
 
-    /**
-     * Update the best solution
-     */
-    private void updateBest(Vm vm) {
-        if (bestTourOrder == null) {
-            bestTourOrder = ants.get(0).trailHost;
-            ants.get(0).atualizaIndice();
-            bestTourOrder = ants.get(0).trailHost;
-        }
+            trails[a.trail[a.trailHost.length - 1]][a.trail[0]] += contribution;
 
-        // for (Ant a : ants) {
-        // double fit = a.calculaFitness(vm, a.trailHost);
-        // if (fit > bestHostFit) {
-        // bestHostFit = fit;
-        // a.atualizaIndice();
-        // bestTourOrder = a.trailHost;
-        // }
-        // }
+            //update best
+            if (bestTourOrder == null) {
+                bestHostFit = 0;
+            }
+
+            if (fit > bestHostFit) {
+                bestHostFit = fit;
+                a.atualizaIndice();
+                bestTourOrder = a.trailHost;
+            }
+        }
     }
 
     /**

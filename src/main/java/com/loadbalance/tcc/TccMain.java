@@ -58,7 +58,7 @@ public class TccMain {
         System.out.println("3 - Firefly");
 
         // int decision = in.nextInt();
-        for (int j = 1; j <= 4; j++) {
+        for (int j = 3; j <= 3; j++) {
             int decision = j;
             LogToFile("Algoritmo " + j);
 

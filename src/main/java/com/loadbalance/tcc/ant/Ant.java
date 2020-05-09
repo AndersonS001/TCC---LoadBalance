@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.cloudbus.cloudsim.hosts.Host;
 import org.cloudbus.cloudsim.resources.Pe;
 import org.cloudbus.cloudsim.vms.Vm;
@@ -55,6 +56,11 @@ public class Ant {
 					* (host.getStorage().getAvailableResource() / vm.getStorage().getCapacity())
 					* (coreDisponivel.size() / vm.getCurrentRequestedMips().size())
 					* (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw());
+
+			if (fit == 0) {
+				hosts = ArrayUtils.remove(hosts, i);
+				trailHost = ArrayUtils.remove(trailHost, i);
+			}
 
 			if (fitness < fit) {
 				fitness = fit;
