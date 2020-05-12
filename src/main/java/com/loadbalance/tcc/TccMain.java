@@ -63,7 +63,7 @@ public class TccMain {
             LogToFile("Algoritmo " + j);
 
             for (int i = 0; i < 10; i++) {
-                dadosSimulacao = new Dados();
+                dadosSimulacao = Dados.getInstance();
                 simulation = new CloudSim();
 
                 switch (decision) {
@@ -87,6 +87,7 @@ public class TccMain {
 
                 dadosSimulacao.TrataMaquina();
                 LogToFile(dadosSimulacao.toString());
+                Dados.killInstance();
             }
         }
 
@@ -107,7 +108,7 @@ public class TccMain {
         new RoundRobinMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
 
-        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
+        dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAG() {
@@ -115,9 +116,8 @@ public class TccMain {
         createDatacenter(new BalanceadorAg());
         new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
 
-        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
+        dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAnt() {
@@ -125,9 +125,8 @@ public class TccMain {
         createDatacenter(new BalanceadorAnt());
         new AntColonyMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
 
-        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
+        dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorFirefly() {
@@ -135,9 +134,8 @@ public class TccMain {
         createDatacenter(new BalanceadorFirefly());
         new FireflyMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
-        // System.out.println("Tempo Total: " + (tempoFim - tempoInicio));
 
-        dadosSimulacao.setTempoDeExecucaoSimulacao((tempoFim - tempoInicio));
+        dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
     }
 
     /**

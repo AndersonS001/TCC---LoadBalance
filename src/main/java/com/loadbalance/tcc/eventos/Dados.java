@@ -14,7 +14,34 @@ import lombok.ToString.Include;
 @Data
 public class Dados {
 
-    private long TempoDeExecucaoSimulacao; // milisegundos
+    // create an object of SingleObject
+    private static Dados instance = new Dados();
+
+    // make the constructor private so that this class cannot be
+    // instantiated
+    private Dados() {
+    }
+
+    // Get the only object available
+    public static Dados getInstance() {
+        if (instance == null) {
+            instance = new Dados();
+        }
+
+        return instance;
+    }
+
+    public static void killInstance() {
+        instance = null;
+    }
+
+    private long TempoDeExecSimula; // milisegundos
+    private int QtdRetentativa = 0;
+
+    public void AddQtdRetentativa(int qtd) {
+        if(qtd > QtdRetentativa)
+            QtdRetentativa = qtd;
+    }
 
     @Exclude
     private List<Host> hostsAtivos = new LinkedList<Host>();
@@ -118,7 +145,7 @@ public class Dados {
         double coreOriginal = 0;
 
         for (Host host : hostsAtivos) {
-            somaUtilizacao += host.getFreePesNumber();
+            somaUtilizacao += host.getPeList().size() - host.getFreePesNumber();
             coreOriginal += host.getPeList().size();
         }
 
