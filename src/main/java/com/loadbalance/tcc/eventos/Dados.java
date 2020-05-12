@@ -39,7 +39,7 @@ public class Dados {
     private int QtdRetentativa = 0;
 
     public void AddQtdRetentativa(int qtd) {
-        if(qtd > QtdRetentativa)
+        if (qtd > QtdRetentativa)
             QtdRetentativa = qtd;
     }
 
@@ -52,7 +52,32 @@ public class Dados {
     }
 
     @Include
-    public int MaiorNumeroDeVmsAlocadasPorHost() {
+    public double MediaVmsAlocPHost() {
+        int count = 0;
+        int qtd = 0;
+
+        for (Host host : hostsAtivos) {
+            qtd++;
+            count += host.getVmList().size();
+        }
+
+        return 1.0 * count / qtd;
+    }
+
+    @Include
+    public int MenorNumVmsAlocPHost() {
+        int count = Integer.MAX_VALUE;
+
+        for (Host host : hostsAtivos) {
+            if (count > host.getVmList().size())
+                count = host.getVmList().size();
+        }
+
+        return count;
+    }
+
+    @Include
+    public int MaiorNumDeVmsAlocPHost() {
         int count = 0;
 
         for (Host host : hostsAtivos) {
@@ -85,8 +110,8 @@ public class Dados {
         double utilizado = 0;
 
         for (Host host : hostsAtivos) {
-            disponivel = host.getTotalMipsCapacity();
-            utilizado = host.getMips();
+            disponivel += host.getTotalAvailableMips();
+            utilizado += host.getMips();
         }
 
         double percentual = utilizado / disponivel;
@@ -100,8 +125,8 @@ public class Dados {
         double utilizado = 0;
 
         for (Host host : hostsAtivos) {
-            disponivel = host.getRam().getCapacity();
-            utilizado = host.getRam().getAllocatedResource();
+            disponivel += host.getRam().getCapacity();
+            utilizado += host.getRam().getAllocatedResource();
         }
 
         double percentual = utilizado / disponivel;
@@ -115,8 +140,8 @@ public class Dados {
         double utilizado = 0;
 
         for (Host host : hostsAtivos) {
-            disponivel = host.getBw().getCapacity();
-            utilizado = host.getBw().getAllocatedResource();
+            disponivel += host.getBw().getCapacity();
+            utilizado += host.getBw().getAllocatedResource();
         }
 
         double percentual = utilizado / disponivel;
@@ -130,8 +155,8 @@ public class Dados {
         double utilizado = 0;
 
         for (Host host : hostsAtivos) {
-            disponivel = host.getStorage().getCapacity();
-            utilizado = host.getStorage().getAllocatedResource();
+            disponivel += host.getStorage().getCapacity();
+            utilizado += host.getStorage().getAllocatedResource();
         }
 
         double percentual = utilizado / disponivel;
