@@ -4,14 +4,20 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
+import com.loadbalance.tcc.eventos.Dados;
+
 import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicyAbstract;
 import org.cloudbus.cloudsim.hosts.Host;
 import org.cloudbus.cloudsim.vms.Vm;
 
 public class BalanceadorFirefly extends VmAllocationPolicyAbstract {
+    private Dados dados;
 
     @Override
     protected Optional<Host> defaultFindHostForVm(final Vm vm) {
+        dados = Dados.getInstance();
+        Long tInicio = System.currentTimeMillis();
+
         final List<Host> hostList = getHostList();
 
         ObjectiveFun objectiveFun = new ObjectiveFun();
@@ -20,6 +26,12 @@ public class BalanceadorFirefly extends VmAllocationPolicyAbstract {
 
         Host h = faNormal.start(vm);
 
-        return Optional.of(h);
+        try {
+            dados.adicionaTempo(System.currentTimeMillis() - tInicio);
+            return Optional.of(h);
+        } catch (Exception e) {
+            dados.adicionaTempo(System.currentTimeMillis() - tInicio);
+            return Optional.empty();
+        }
     }
 }

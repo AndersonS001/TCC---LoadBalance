@@ -1,5 +1,6 @@
 package com.loadbalance.tcc.eventos;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -37,6 +38,11 @@ public class Dados {
 
     private long TempoDeExecSimula; // milisegundos
     private int QtdRetentativa = 0;
+    private List<Long> temposDeAlocacao = new ArrayList<>();
+
+    public void adicionaTempo(Long e){
+        temposDeAlocacao.add(e);
+    }
 
     public void AddQtdRetentativa(int qtd) {
         if (qtd > QtdRetentativa)

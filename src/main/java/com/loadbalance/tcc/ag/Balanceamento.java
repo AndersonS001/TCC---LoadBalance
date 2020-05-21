@@ -73,11 +73,11 @@ public class Balanceamento {
             Host host = getHost(i);
             List<Pe> coreDisponivel = calculaPe(host, vm);
 
-            double fit = (host.getTotalAvailableMips() / vm.getCurrentRequestedTotalMips())
-                    * (host.getRam().getAvailableResource() / vm.getRam().getCapacity())
-                    * (host.getStorage().getAvailableResource() / vm.getStorage().getCapacity())
-                    * (coreDisponivel.size() / vm.getCurrentRequestedMips().size())
-                    * (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw());
+            double fit = (1 * (host.getTotalAvailableMips() / vm.getCurrentRequestedTotalMips()))
+                    * (2 * (host.getRam().getAvailableResource() / vm.getRam().getCapacity()))
+                    * (1 * (host.getStorage().getAvailableResource() / vm.getStorage().getCapacity()))
+                    * (1 * (coreDisponivel.size() / vm.getCurrentRequestedMips().size()))
+                    * (1 * (host.getBw().getAvailableResource() / vm.getCurrentRequestedBw()));
 
             if (fit == 0) {
                 hosts.remove(host);
@@ -109,7 +109,6 @@ public class Balanceamento {
                 }
             }
         } catch (Exception e) {
-            System.out.println("ddd");
         }
 
         return selectedPes;

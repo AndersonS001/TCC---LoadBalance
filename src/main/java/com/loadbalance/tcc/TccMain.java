@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -14,6 +15,8 @@ import com.loadbalance.tcc.ag.BalanceadorAg;
 import com.loadbalance.tcc.ant.AntColonyMain;
 import com.loadbalance.tcc.ant.BalanceadorAnt;
 import com.loadbalance.tcc.eventos.Dados;
+import com.loadbalance.tcc.eventos.SortByHost;
+import com.loadbalance.tcc.eventos.SortByVm;
 import com.loadbalance.tcc.firefly.BalanceadorFirefly;
 import com.loadbalance.tcc.firefly.FireflyMain;
 import com.loadbalance.tcc.rr.BalanceadorRoundRobin;
@@ -35,11 +38,11 @@ import org.cloudbus.cloudsim.vms.VmSimple;
 
 public class TccMain {
 
-    private static final int HOSTS = 170;
-    private static final int HOST_PES = 8;
+    private static final int HOSTS = 230;
+    private static final int HOST_PES = 6;
 
     private static final int VMS = 500;
-    private static final int VM_PES = 1;
+    private static final int VM_PES = 2;
 
     private static final int CLOUDLETS = 0;
     private static final int CLOUDLET_PES = 1;
@@ -58,11 +61,11 @@ public class TccMain {
         System.out.println("3 - Firefly");
 
         // int decision = in.nextInt();
-        for (int j = 1; j <= 4; j++) {
+        for (int j = 1; j <= 3; j++) {
             int decision = j;
             LogToFile("Algoritmo " + j);
 
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1; i++) {
                 dadosSimulacao = Dados.getInstance();
                 simulation = new CloudSim();
 
@@ -103,18 +106,26 @@ public class TccMain {
     }
 
     private static void BalanceadorRR() {
+        List<Vm> vmList = createVms();
+        Collections.sort(vmList, new SortByVm());
+
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorRoundRobin());
-        new RoundRobinMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
+
+        new RoundRobinMain(simulation, vmList, createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
 
         dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
     }
 
     private static void BalanceadorAG() {
+        List<Vm> vmList = createVms();
+        Collections.sort(vmList, new SortByVm());
+
         long tempoInicio = System.currentTimeMillis();
         createDatacenter(new BalanceadorAg());
-        new AlgoritmoGeneticoMain(simulation, createVms(), createCloudlets(), dadosSimulacao);
+
+        new AlgoritmoGeneticoMain(simulation, vmList, createCloudlets(), dadosSimulacao);
         long tempoFim = System.currentTimeMillis();
 
         dadosSimulacao.setTempoDeExecSimula((tempoFim - tempoInicio));
@@ -148,6 +159,8 @@ public class TccMain {
             hostList.add(host);
         }
 
+        Collections.sort(hostList, new SortByHost());
+
         return new DatacenterSimple(simulation, hostList, vmAllocationPolicy);
     }
 
@@ -159,8 +172,8 @@ public class TccMain {
             peList.add(new PeSimple((0.3 + new Random().nextDouble()) * 3000));
         }
 
-        final long ram = (long) ((0.3 + new Random().nextDouble()) * 30000); // in Megabytes
-        final long bw = (long) ((0.3 + new Random().nextDouble()) * 28000); // in Megabits/s
+        final long ram = (long) ((0.3 + new Random().nextDouble()) * 15000); // in Megabytes
+        final long bw = (long) ((0.3 + new Random().nextDouble()) * 15000); // in Megabits/s
         final long storage = (long) ((0.2 + new Random().nextDouble()) * 15000); // in Megabytes
 
         /*
@@ -177,11 +190,16 @@ public class TccMain {
         final List<Vm> list = new LinkedList<Vm>();
         int tam = 2400;
         for (int i = 0; i < VMS; i++) {
+            int pe = new Random().nextInt(VM_PES);
+
+            while (pe == 0)
+                pe = new Random().nextInt(VM_PES);
+
             // Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
-            final Vm vm = new VmSimple((0.1 + new Random().nextDouble()) * tam, VM_PES);
-            vm.setRam((long) ((0.5 + new Random().nextDouble()) * 2 * tam))
-                    .setBw((long) ((0.3 + new Random().nextDouble()) * 2 * tam))
-                    .setSize((long) ((0.1 + new Random().nextDouble()) * tam));
+            final Vm vm = new VmSimple((0.01 + new Random().nextDouble()) * tam, pe);
+            vm.setRam((long) ((0.05 + new Random().nextDouble()) * 2 * tam))
+                    .setBw((long) ((0.03 + new Random().nextDouble()) * 2 * tam))
+                    .setSize((long) ((0.01 + new Random().nextDouble()) * tam));
             list.add(vm);
         }
 
