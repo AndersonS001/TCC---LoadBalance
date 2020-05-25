@@ -65,7 +65,7 @@ public class TccMain {
             int decision = j;
             LogToFile("Algoritmo " + j);
 
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 300; i++) {
                 dadosSimulacao = Dados.getInstance();
                 simulation = new CloudSim();
 
