@@ -65,7 +65,7 @@ public class TccMain {
             int decision = j;
             LogToFile("Algoritmo " + j);
 
-            for (int i = 0; i < 300; i++) {
+            for (int i = 0; i < 1; i++) {
                 dadosSimulacao = Dados.getInstance();
                 simulation = new CloudSim();
 
@@ -172,9 +172,9 @@ public class TccMain {
             peList.add(new PeSimple((0.3 + new Random().nextDouble()) * 3000));
         }
 
-        final long ram = (long) ((0.3 + new Random().nextDouble()) * 15000); // in Megabytes
-        final long bw = (long) ((0.3 + new Random().nextDouble()) * 15000); // in Megabits/s
-        final long storage = (long) ((0.2 + new Random().nextDouble()) * 15000); // in Megabytes
+        final long ram = (long) ((0.5 + new Random().nextDouble()) * 10000); // in Megabytes
+        final long bw = (long) ((0.5 + new Random().nextDouble()) * 10000); // in Megabits/s
+        final long storage = (long) ((0.5 + new Random().nextDouble()) * 8000); // in Megabytes
 
         /*
          * Uses ResourceProvisionerSimple by default for RAM and BW provisioning and

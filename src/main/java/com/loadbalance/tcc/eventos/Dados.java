@@ -37,17 +37,6 @@ public class Dados {
     }
 
     private long TempoDeExecSimula; // milisegundos
-    private int QtdRetentativa = 0;
-    private List<Long> temposDeAlocacao = new ArrayList<>();
-
-    public void adicionaTempo(Long e){
-        temposDeAlocacao.add(e);
-    }
-
-    public void AddQtdRetentativa(int qtd) {
-        if (qtd > QtdRetentativa)
-            QtdRetentativa = qtd;
-    }
 
     @Exclude
     private List<Host> hostsAtivos = new LinkedList<Host>();
@@ -185,6 +174,11 @@ public class Dados {
         return somaUtilizacao;
     }
 
+    private List<Long> temposDeAlocacao = new ArrayList<>();
+
+    public void adicionaTempo(Long e){
+        temposDeAlocacao.add(e);
+    }
     // double fit = (host.getTotalAvailableMips() /
     // vm.getCurrentRequestedTotalMips())
     // * (host.getRam().getAvailableResource() / vm.getRam().getCapacity())

@@ -21,9 +21,9 @@ public class BalanceadorAnt extends VmAllocationPolicyAbstract {
 
         AntColonyOptimization ant = new AntColonyOptimization(hostList.size(), hostList);
 
-        Host[] h = ant.startAntOptimization(vm);
-
         try {
+            Host[] h = ant.startAntOptimization(vm);
+
             dados.adicionaTempo(System.currentTimeMillis() - tInicio);
             return Optional.of(h[0]);
         } catch (Exception e) {

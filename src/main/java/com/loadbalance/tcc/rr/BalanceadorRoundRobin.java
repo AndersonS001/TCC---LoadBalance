@@ -17,7 +17,6 @@ public class BalanceadorRoundRobin extends VmAllocationPolicyAbstract {
     protected Optional<Host> defaultFindHostForVm(final Vm vm) {
         dados = Dados.getInstance();
         final List<Host> hostList = getHostList();
-        int qtdRetentativa = 0;
 
         Long tInicio = System.currentTimeMillis();
 
@@ -31,10 +30,7 @@ public class BalanceadorRoundRobin extends VmAllocationPolicyAbstract {
             // Different from the FirstFit policy, it always increments the host index.
             lastHostIndex = ++lastHostIndex % hostList.size();
             if (host.isSuitableForVm(vm)) {
-                dados.adicionaTempo(System.currentTimeMillis() - tInicio);
                 return Optional.of(host);
-            } else {
-                dados.AddQtdRetentativa(++qtdRetentativa);
             }
         }
 
