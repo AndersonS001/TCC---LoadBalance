@@ -38,7 +38,7 @@ import org.cloudbus.cloudsim.vms.VmSimple;
 
 public class TccMain {
 
-    private static final int HOSTS = 230;
+    private static final int HOSTS = 250;
     private static final int HOST_PES = 6;
 
     private static final int VMS = 500;

@@ -47,7 +47,7 @@ public class Dados {
     }
 
     @Include
-    public double MediaVmsAlocPHost() {
+    public int MediaVmsAlocPHost() {
         int count = 0;
         int qtd = 0;
 
@@ -56,7 +56,7 @@ public class Dados {
             count += host.getVmList().size();
         }
 
-        return 1.0 * count / qtd;
+        return count / qtd;
     }
 
     @Include
