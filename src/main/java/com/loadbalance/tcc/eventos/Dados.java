@@ -159,21 +159,6 @@ public class Dados {
         return percentual;
     }
 
-    @Include
-    public double CoreUtilization() {
-        double somaUtilizacao = 0;
-        double coreOriginal = 0;
-
-        for (Host host : hostsAtivos) {
-            somaUtilizacao += host.getPeList().size() - host.getFreePesNumber();
-            coreOriginal += host.getPeList().size();
-        }
-
-        somaUtilizacao = somaUtilizacao / coreOriginal;
-
-        return somaUtilizacao;
-    }
-
     private List<Long> temposDeAlocacao = new ArrayList<>();
 
     public void adicionaTempo(Long e){

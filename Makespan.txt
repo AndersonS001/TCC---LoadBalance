@@ -1,608 +1,3006 @@
-
 Algoritmo 1
-TempoDeExecSimula=200, temposDeAlocacao=77
-TempoDeExecSimula=35,  temposDeAlocacao=21
-TempoDeExecSimula=33,  temposDeAlocacao=22
-TempoDeExecSimula=47,  temposDeAlocacao=37
-TempoDeExecSimula=27,  temposDeAlocacao=18
-TempoDeExecSimula=30,  temposDeAlocacao=22
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=23,  temposDeAlocacao=13
-TempoDeExecSimula=25,  temposDeAlocacao=18
-TempoDeExecSimula=35,  temposDeAlocacao=27
-TempoDeExecSimula=26,  temposDeAlocacao=15
-TempoDeExecSimula=16,  temposDeAlocacao=8
-TempoDeExecSimula=40,  temposDeAlocacao=30
-TempoDeExecSimula=34,  temposDeAlocacao=25
-TempoDeExecSimula=32,  temposDeAlocacao=23
-TempoDeExecSimula=20,  temposDeAlocacao=11
-TempoDeExecSimula=21,  temposDeAlocacao=14
-TempoDeExecSimula=24,  temposDeAlocacao=17
-TempoDeExecSimula=22,  temposDeAlocacao=14
-TempoDeExecSimula=19,  temposDeAlocacao=12
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=18,  temposDeAlocacao=12
-TempoDeExecSimula=21,  temposDeAlocacao=15
-TempoDeExecSimula=26,  temposDeAlocacao=18
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=22,  temposDeAlocacao=17
-TempoDeExecSimula=19,  temposDeAlocacao=12
-TempoDeExecSimula=24,  temposDeAlocacao=16
-TempoDeExecSimula=17,  temposDeAlocacao=11
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=24,  temposDeAlocacao=17
-TempoDeExecSimula=17,  temposDeAlocacao=12
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=21,  temposDeAlocacao=13
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=16,  temposDeAlocacao=11
-TempoDeExecSimula=23,  temposDeAlocacao=18
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=24,  temposDeAlocacao=19
-TempoDeExecSimula=32,  temposDeAlocacao=25
-TempoDeExecSimula=27,  temposDeAlocacao=20
-TempoDeExecSimula=19,  temposDeAlocacao=13
-TempoDeExecSimula=18,  temposDeAlocacao=13
-TempoDeExecSimula=24,  temposDeAlocacao=19
-TempoDeExecSimula=24,  temposDeAlocacao=18
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=24,  temposDeAlocacao=18
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=22,  temposDeAlocacao=17
-TempoDeExecSimula=20,  temposDeAlocacao=14
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=24,  temposDeAlocacao=20
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=19,  temposDeAlocacao=12
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=15,  temposDeAlocacao=11
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=11,  temposDeAlocacao=6
-TempoDeExecSimula=20,  temposDeAlocacao=14
-TempoDeExecSimula=13,  temposDeAlocacao=9
-TempoDeExecSimula=13,  temposDeAlocacao=8
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=13,  temposDeAlocacao=8
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=20,  temposDeAlocacao=15
-TempoDeExecSimula=15,  temposDeAlocacao=11
-TempoDeExecSimula=22,  temposDeAlocacao=17
-TempoDeExecSimula=23,  temposDeAlocacao=18
-TempoDeExecSimula=17,  temposDeAlocacao=12
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=18,  temposDeAlocacao=14
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=11,  temposDeAlocacao=7
-TempoDeExecSimula=13,  temposDeAlocacao=9
-TempoDeExecSimula=18,  temposDeAlocacao=13
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=16,  temposDeAlocacao=11
-TempoDeExecSimula=12,  temposDeAlocacao=9
-TempoDeExecSimula=13,  temposDeAlocacao=8
-TempoDeExecSimula=11,  temposDeAlocacao=6
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=21,  temposDeAlocacao=16
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=12,  temposDeAlocacao=8
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=15,  temposDeAlocacao=9
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=17,  temposDeAlocacao=13
-TempoDeExecSimula=21,  temposDeAlocacao=14
-TempoDeExecSimula=22,  temposDeAlocacao=16
-TempoDeExecSimula=25,  temposDeAlocacao=19
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=26,  temposDeAlocacao=20
-TempoDeExecSimula=25,  temposDeAlocacao=19
-TempoDeExecSimula=202, temposDeAlocacao=90
-TempoDeExecSimula=34,  temposDeAlocacao=19
-TempoDeExecSimula=46,  temposDeAlocacao=33
-TempoDeExecSimula=51,  temposDeAlocacao=39
-TempoDeExecSimula=37,  temposDeAlocacao=25
-TempoDeExecSimula=22,  temposDeAlocacao=14
-TempoDeExecSimula=28,  temposDeAlocacao=20
-TempoDeExecSimula=22,  temposDeAlocacao=13
-TempoDeExecSimula=36,  temposDeAlocacao=25
-TempoDeExecSimula=23,  temposDeAlocacao=13
-TempoDeExecSimula=29,  temposDeAlocacao=19
-TempoDeExecSimula=20,  temposDeAlocacao=13
-TempoDeExecSimula=23,  temposDeAlocacao=13
-TempoDeExecSimula=17,  temposDeAlocacao=9
-TempoDeExecSimula=22,  temposDeAlocacao=12
-TempoDeExecSimula=47,  temposDeAlocacao=39
-TempoDeExecSimula=20,  temposDeAlocacao=12
-TempoDeExecSimula=16,  temposDeAlocacao=7
-TempoDeExecSimula=19,  temposDeAlocacao=12
-TempoDeExecSimula=23,  temposDeAlocacao=15
-TempoDeExecSimula=15,  temposDeAlocacao=7
-TempoDeExecSimula=21,  temposDeAlocacao=14
-TempoDeExecSimula=32,  temposDeAlocacao=23
-TempoDeExecSimula=21,  temposDeAlocacao=14
-TempoDeExecSimula=27,  temposDeAlocacao=21
-TempoDeExecSimula=27,  temposDeAlocacao=21
-TempoDeExecSimula=16,  temposDeAlocacao=9
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=21,  temposDeAlocacao=14
-TempoDeExecSimula=32,  temposDeAlocacao=24
-TempoDeExecSimula=15,  temposDeAlocacao=6
-TempoDeExecSimula=23,  temposDeAlocacao=17
-TempoDeExecSimula=28,  temposDeAlocacao=21
-TempoDeExecSimula=20,  temposDeAlocacao=10
-TempoDeExecSimula=19,  temposDeAlocacao=10
-TempoDeExecSimula=23,  temposDeAlocacao=15
-TempoDeExecSimula=39,  temposDeAlocacao=30
-TempoDeExecSimula=24,  temposDeAlocacao=16
-TempoDeExecSimula=29,  temposDeAlocacao=21
-TempoDeExecSimula=24,  temposDeAlocacao=15
-TempoDeExecSimula=18,  temposDeAlocacao=13
-TempoDeExecSimula=17,  temposDeAlocacao=11
-TempoDeExecSimula=24,  temposDeAlocacao=15
-TempoDeExecSimula=14,  temposDeAlocacao=9
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=26,  temposDeAlocacao=18
-TempoDeExecSimula=27,  temposDeAlocacao=20
-TempoDeExecSimula=27,  temposDeAlocacao=21
-TempoDeExecSimula=16,  temposDeAlocacao=9
-TempoDeExecSimula=22,  temposDeAlocacao=15
-TempoDeExecSimula=29,  temposDeAlocacao=22
-TempoDeExecSimula=15,  temposDeAlocacao=9
-TempoDeExecSimula=27,  temposDeAlocacao=20
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=27,  temposDeAlocacao=21
-TempoDeExecSimula=18,  temposDeAlocacao=12
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=16,  temposDeAlocacao=7
-TempoDeExecSimula=24,  temposDeAlocacao=17
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=11,  temposDeAlocacao=7
-TempoDeExecSimula=15,  temposDeAlocacao=9
-TempoDeExecSimula=15,  temposDeAlocacao=9
-TempoDeExecSimula=23,  temposDeAlocacao=15
-TempoDeExecSimula=20,  temposDeAlocacao=15
-TempoDeExecSimula=14,  temposDeAlocacao=8
-TempoDeExecSimula=14,  temposDeAlocacao=10
-TempoDeExecSimula=16,  temposDeAlocacao=8
-TempoDeExecSimula=24,  temposDeAlocacao=19
-TempoDeExecSimula=19,  temposDeAlocacao=14
-TempoDeExecSimula=15,   temposDeAlocacao=10
-TempoDeExecSimula=14,  temposDeAlocacao=8
-TempoDeExecSimula=13,  temposDeAlocacao=6
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=20,  temposDeAlocacao=13
-TempoDeExecSimula=15,  temposDeAlocacao=8
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=20,  temposDeAlocacao=13
-TempoDeExecSimula=19,  temposDeAlocacao=11
-TempoDeExecSimula=13,  temposDeAlocacao=7
-TempoDeExecSimula=13,  temposDeAlocacao=7
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=15,  temposDeAlocacao=8
-TempoDeExecSimula=19,  temposDeAlocacao=12
-TempoDeExecSimula=27,  temposDeAlocacao=18
-TempoDeExecSimula=16,  temposDeAlocacao=10
-TempoDeExecSimula=15,  temposDeAlocacao=8
-TempoDeExecSimula=19,  temposDeAlocacao=13
-TempoDeExecSimula=17,  temposDeAlocacao=12
-TempoDeExecSimula=22,  temposDeAlocacao=15
-TempoDeExecSimula=31,  temposDeAlocacao=25
-TempoDeExecSimula=22,  temposDeAlocacao=14
-TempoDeExecSimula=20,  temposDeAlocacao=12
-TempoDeExecSimula=17,  temposDeAlocacao=8
-TempoDeExecSimula=18,  temposDeAlocacao=12
-TempoDeExecSimula=15,  temposDeAlocacao=9
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=21,  temposDeAlocacao=15
-
-
+ TempoDeExecSimula=225, temposDeAlocacao= 94  
+ TempoDeExecSimula=41, temposDeAlocacao= 28  
+ TempoDeExecSimula=40, temposDeAlocacao= 27  
+ TempoDeExecSimula=38, temposDeAlocacao= 28  
+ TempoDeExecSimula=33, temposDeAlocacao= 24  
+ TempoDeExecSimula=29, temposDeAlocacao= 20  
+ TempoDeExecSimula=30, temposDeAlocacao= 21  
+ TempoDeExecSimula=25, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 14  
+ TempoDeExecSimula=35, temposDeAlocacao= 25  
+ TempoDeExecSimula=28, temposDeAlocacao= 18  
+ TempoDeExecSimula=31, = 23  
+ TempoDeExecSimula=29, temposDeAlocacao= 19  
+ TempoDeExecSimula=34, temposDeAlocacao= 25  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=28, temposDeAlocacao= 17  
+ TempoDeExecSimula=36, temposDeAlocacao= 29  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=25, temposDeAlocacao= 16  
+ TempoDeExecSimula=30, temposDeAlocacao= 22  
+ TempoDeExecSimula=39, temposDeAlocacao= 31  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=22, temposDeAlocacao= 13  
+ TempoDeExecSimula=29, temposDeAlocacao= 21  
+ TempoDeExecSimula=36, temposDeAlocacao= 30  
+ TempoDeExecSimula=30, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 14  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=22, temposDeAlocacao= 14  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=34, temposDeAlocacao= 27  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=26, temposDeAlocacao= 18  
+ TempoDeExecSimula=29, temposDeAlocacao= 22  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=29, temposDeAlocacao= 23  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 18  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=41, temposDeAlocacao= 33  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=31, temposDeAlocacao= 23  
+ TempoDeExecSimula=30, temposDeAlocacao= 24  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 11  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 11  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=25, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=30, temposDeAlocacao= 24  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=18,  temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=28, temposDeAlocacao= 20  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=31, temposDeAlocacao= 23  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=26, temposDeAlocacao= 22  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=31, temposDeAlocacao= 25  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=33, temposDeAlocacao= 27  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=34, temposDeAlocacao= 30  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=24, temposDeAlocacao= 21  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=30, temposDeAlocacao= 23  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=23, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 18  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=29, temposDeAlocacao= 22  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=29, temposDeAlocacao= 21  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=21,  16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=29, temposDeAlocacao= 22  
+ TempoDeExecSimula=27, temposDeAlocacao= 19  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=26, temposDeAlocacao= 22  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=26, temposDeAlocacao= 22  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=28, temposDeAlocacao= 23  
+ TempoDeExecSimula=31, temposDeAlocacao= 26  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=13, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=29, temposDeAlocacao= 23  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=33, temposDeAlocacao= 27  
+ TempoDeExecSimula=26, temposDeAlocacao= 18  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=28, temposDeAlocacao= 23  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=30, temposDeAlocacao= 25  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=23, temposDeAlocacao= 20  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=27, temposDeAlocacao= 23  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=31, temposDeAlocacao= 24  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=27, temposDeAlocacao= 23  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=29, temposDeAlocacao= 22  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=34, temposDeAlocacao= 28  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=28, temposDeAlocacao= 22  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=30, temposDeAlocacao= 24  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=30, temposDeAlocacao= 26  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=29, temposDeAlocacao= 24  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=26, temposDeAlocacao= 22  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=21, temposDeAlocacao= 13  
+ TempoDeExecSimula=26, temposDeAlocacao= 18  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=28, temposDeAlocacao= 23  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=25, temposDeAlocacao= 21  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16,   
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=28, temposDeAlocacao= 24  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=29, temposDeAlocacao= 23  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 7  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=25, temposDeAlocacao= 21  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
 Algoritmo 2
-TempoDeExecSimula=70, temposDeAlocacao=58
-TempoDeExecSimula=32, temposDeAlocacao=26
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=22, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=23, temposDeAlocacao=16
-TempoDeExecSimula=28,  temposDeAlocacao=21
-TempoDeExecSimula=25, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=17
-TempoDeExecSimula=23,  temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=16
-TempoDeExecSimula=23, temposDeAlocacao=15
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=27, temposDeAlocacao=19
-TempoDeExecSimula=26, temposDeAlocacao=19
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=25,  temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=19, temposDeAlocacao=14
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=23, temposDeAlocacao=16
-TempoDeExecSimula=26, temposDeAlocacao=19
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=25, temposDeAlocacao=17
-TempoDeExecSimula=26, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=26, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=19, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=32, temposDeAlocacao=25
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=34, temposDeAlocacao=28
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=21,  temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=21,  temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=19, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=19, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=71, temposDeAlocacao=61
-TempoDeExecSimula=36, temposDeAlocacao=30
-TempoDeExecSimula=26, temposDeAlocacao=20
-TempoDeExecSimula=26,  temposDeAlocacao=21
-TempoDeExecSimula=27, temposDeAlocacao=22
-TempoDeExecSimula=27, temposDeAlocacao=21
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=27, temposDeAlocacao=20
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=31, temposDeAlocacao=26
-TempoDeExecSimula=31, temposDeAlocacao=25
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=24, temposDeAlocacao=18
-TempoDeExecSimula=35, temposDeAlocacao=29
-TempoDeExecSimula=33,  temposDeAlocacao=25
-TempoDeExecSimula=28, temposDeAlocacao=23
-TempoDeExecSimula=28, temposDeAlocacao=23
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=20
-TempoDeExecSimula=28, temposDeAlocacao=23
-TempoDeExecSimula=28, temposDeAlocacao=22
-TempoDeExecSimula=26, temposDeAlocacao=20
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=30, temposDeAlocacao=23
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=21,  temposDeAlocacao=16
-TempoDeExecSimula=30, temposDeAlocacao=23
-TempoDeExecSimula=32, temposDeAlocacao=26
-TempoDeExecSimula=23,  temposDeAlocacao=17
-TempoDeExecSimula=21,  temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=21,  temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=23, temposDeAlocacao=15
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=28, temposDeAlocacao=19
-TempoDeExecSimula=26, temposDeAlocacao=20
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=27, temposDeAlocacao=20
-TempoDeExecSimula=23, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=19
-TempoDeExecSimula=28, temposDeAlocacao=21
-TempoDeExecSimula=28, temposDeAlocacao=21
-TempoDeExecSimula=26,  temposDeAlocacao=19
-TempoDeExecSimula=31, temposDeAlocacao=24
-TempoDeExecSimula=30,  temposDeAlocacao=22
-TempoDeExecSimula=28, temposDeAlocacao=21
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=25, temposDeAlocacao=18
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=26, temposDeAlocacao=18
-TempoDeExecSimula=23, temposDeAlocacao=17
-TempoDeExecSimula=22, temposDeAlocacao=18
-TempoDeExecSimula=21, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=25, temposDeAlocacao=16
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=17
-TempoDeExecSimula=21, temposDeAlocacao=17
-TempoDeExecSimula=24, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=26, temposDeAlocacao=19
-TempoDeExecSimula=27, temposDeAlocacao=21
-TempoDeExecSimula=34, temposDeAlocacao=25
-TempoDeExecSimula=29, temposDeAlocacao=23
-TempoDeExecSimula=24, temposDeAlocacao=17
-TempoDeExecSimula=23, temposDeAlocacao=16
-TempoDeExecSimula=26, temposDeAlocacao=17
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=22, temposDeAlocacao=16
-
-
+ TempoDeExecSimula=63, temposDeAlocacao= 56  
+ TempoDeExecSimula=45, temposDeAlocacao= 36  
+ TempoDeExecSimula=29, temposDeAlocacao= 21  
+ TempoDeExecSimula=29, temposDeAlocacao= 22  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=28, temposDeAlocacao= 23  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=36, temposDeAlocacao= 32  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=30, temposDeAlocacao= 25  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=28, temposDeAlocacao= 22  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=30, temposDeAlocacao= 22  
+ TempoDeExecSimula=32, temposDeAlocacao= 23  
+ TempoDeExecSimula=28, temposDeAlocacao= 22  
+ TempoDeExecSimula=27, temposDeAlocacao= 21  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=24, temposDeAlocacao= 21  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=36, temposDeAlocacao= 30  
+ TempoDeExecSimula=34, temposDeAlocacao= 26  
+ TempoDeExecSimula=36, temposDeAlocacao= 29  
+ TempoDeExecSimula=31, temposDeAlocacao= 24  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=27, temposDeAlocacao= 23  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=36, temposDeAlocacao= 31  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=27, temposDeAlocacao= 23  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=27, temposDeAlocacao= 22  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 21  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=27, temposDeAlocacao= 24  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=29, temposDeAlocacao= 24  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=24, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 22  
+ TempoDeExecSimula=31, temposDeAlocacao= 26  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=31, temposDeAlocacao= 26  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=32, temposDeAlocacao= 27  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=27, temposDeAlocacao= 20  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=27, temposDeAlocacao= 23  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=29, temposDeAlocacao= 26  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao=15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=25, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=26, temposDeAlocacao= 23  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao=17  
+ TempoDeExecSimula=29, temposDeAlocacao= 24  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=30, temposDeAlocacao= 26  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=29, temposDeAlocacao= 26  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=31, temposDeAlocacao= 25  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=26, temposDeAlocacao= 22  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=25, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19,   
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=23, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=28, temposDeAlocacao= 23  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=22, temposDeAlocacao= 17  
+ TempoDeExecSimula=22, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=31, temposDeAlocacao= 25  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=23, temposDeAlocacao= 17  
+ TempoDeExecSimula=26, temposDeAlocacao= 20  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=21, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 16  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
 Algoritmo 3
-TempoDeExecSimula=49, temposDeAlocacao=42
-TempoDeExecSimula=44,  temposDeAlocacao=40
-TempoDeExecSimula=18, temposDeAlocacao=14
-TempoDeExecSimula=20,  temposDeAlocacao=16
-TempoDeExecSimula=20, temposDeAlocacao=14
-TempoDeExecSimula=20, temposDeAlocacao=16
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=13,  temposDeAlocacao=8
-TempoDeExecSimula=15,  temposDeAlocacao=11
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=10, temposDeAlocacao=6
-TempoDeExecSimula=13, temposDeAlocacao=9
-TempoDeExecSimula=12,  temposDeAlocacao=7
-TempoDeExecSimula=17,  temposDeAlocacao=11
-TempoDeExecSimula=15, temposDeAlocacao=12
-TempoDeExecSimula=10,  temposDeAlocacao=7
-TempoDeExecSimula=13, temposDeAlocacao=9
-TempoDeExecSimula=16,  temposDeAlocacao=11
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=24, temposDeAlocacao=18
-TempoDeExecSimula=23, temposDeAlocacao=18
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=26, temposDeAlocacao=21
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=22,  temposDeAlocacao=18
-TempoDeExecSimula=22,  temposDeAlocacao=18
-TempoDeExecSimula=18, temposDeAlocacao=14
-TempoDeExecSimula=15, temposDeAlocacao=10
-TempoDeExecSimula=30, temposDeAlocacao=24
-TempoDeExecSimula=15, temposDeAlocacao=11
-TempoDeExecSimula=14, temposDeAlocacao=11
-TempoDeExecSimula=11, temposDeAlocacao=6
-TempoDeExecSimula=11,  temposDeAlocacao=7
-TempoDeExecSimula=14, temposDeAlocacao=11
-TempoDeExecSimula=13, temposDeAlocacao=9
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=12, temposDeAlocacao=7
-TempoDeExecSimula=10, temposDeAlocacao=5
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=15,  temposDeAlocacao=10
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=16,  temposDeAlocacao=11
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=17, temposDeAlocacao=11
-TempoDeExecSimula=11, temposDeAlocacao=7
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=13, temposDeAlocacao=9
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=11, temposDeAlocacao=7
-TempoDeExecSimula=19,  temposDeAlocacao=13
-TempoDeExecSimula=16, temposDeAlocacao=12
-TempoDeExecSimula=18, temposDeAlocacao=13
-TempoDeExecSimula=16, temposDeAlocacao=10
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=17, temposDeAlocacao=11
-TempoDeExecSimula=11, temposDeAlocacao=7
-TempoDeExecSimula=15, temposDeAlocacao=10
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=11, temposDeAlocacao=7
-TempoDeExecSimula=12, temposDeAlocacao=7
-TempoDeExecSimula=10, temposDeAlocacao=5
-TempoDeExecSimula=12, temposDeAlocacao=8
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=10,  temposDeAlocacao=6
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=10, temposDeAlocacao=6
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=15, temposDeAlocacao=10
-TempoDeExecSimula=10,  temposDeAlocacao=6
-TempoDeExecSimula=14, temposDeAlocacao=11
-TempoDeExecSimula=15, temposDeAlocacao=11
-TempoDeExecSimula=17,  temposDeAlocacao=12
-TempoDeExecSimula=15, temposDeAlocacao=11
-TempoDeExecSimula=14, temposDeAlocacao=11
-TempoDeExecSimula=10, temposDeAlocacao=6
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=17, temposDeAlocacao=13
-TempoDeExecSimula=15,  temposDeAlocacao=11
-TempoDeExecSimula=18, temposDeAlocacao=14
-TempoDeExecSimula=17, temposDeAlocacao=11
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=13, temposDeAlocacao=9
-TempoDeExecSimula=17,  temposDeAlocacao=12
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=12,  temposDeAlocacao=8
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=12, temposDeAlocacao=7
-TempoDeExecSimula=16, temposDeAlocacao=12
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=16, temposDeAlocacao=13
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=15, temposDeAlocacao=11
-TempoDeExecSimula=15, temposDeAlocacao=10
-TempoDeExecSimula=11, temposDeAlocacao=6
-TempoDeExecSimula=12, temposDeAlocacao=6
-TempoDeExecSimula=42, temposDeAlocacao=32
-TempoDeExecSimula=25, temposDeAlocacao=19
-TempoDeExecSimula=27, temposDeAlocacao=20
-TempoDeExecSimula=22, temposDeAlocacao=18
-TempoDeExecSimula=22, temposDeAlocacao=16
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=10, temposDeAlocacao=7
-TempoDeExecSimula=24, temposDeAlocacao=18
-TempoDeExecSimula=19, temposDeAlocacao=12
-TempoDeExecSimula=20,  temposDeAlocacao=14
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=18,  temposDeAlocacao=13
-TempoDeExecSimula=17, temposDeAlocacao=13
-TempoDeExecSimula=25, temposDeAlocacao=18
-TempoDeExecSimula=25, temposDeAlocacao=18
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=14, temposDeAlocacao=10
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=17, temposDeAlocacao=11
-TempoDeExecSimula=25, temposDeAlocacao=20
-TempoDeExecSimula=15, temposDeAlocacao=10
-TempoDeExecSimula=14, temposDeAlocacao=8
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=19,  temposDeAlocacao=13
-TempoDeExecSimula=17, temposDeAlocacao=10
-TempoDeExecSimula=20, temposDeAlocacao=14
-TempoDeExecSimula=22,  temposDeAlocacao=16
-TempoDeExecSimula=14, temposDeAlocacao=8
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=20, temposDeAlocacao=14
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=23,  temposDeAlocacao=16
-TempoDeExecSimula=22,  temposDeAlocacao=15
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=14, temposDeAlocacao=8
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=15, temposDeAlocacao=9
-TempoDeExecSimula=20, temposDeAlocacao=12
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=20, temposDeAlocacao=15
-TempoDeExecSimula=22,  temposDeAlocacao=14
-TempoDeExecSimula=17, temposDeAlocacao=10
-TempoDeExecSimula=20,  temposDeAlocacao=14
-TempoDeExecSimula=13, temposDeAlocacao=7
-TempoDeExecSimula=13, temposDeAlocacao=7
-TempoDeExecSimula=17, temposDeAlocacao=8
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=20, temposDeAlocacao=12
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=16,  temposDeAlocacao=11
-TempoDeExecSimula=21,  temposDeAlocacao=15
-TempoDeExecSimula=20, temposDeAlocacao=14
-TempoDeExecSimula=31, temposDeAlocacao=25
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=13, temposDeAlocacao=8
-TempoDeExecSimula=19,  temposDeAlocacao=13
-TempoDeExecSimula=10,  temposDeAlocacao=5
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=11, temposDeAlocacao=6
-TempoDeExecSimula=24, temposDeAlocacao=19
-TempoDeExecSimula=18, temposDeAlocacao=13
-TempoDeExecSimula=13, temposDeAlocacao=7
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=20, temposDeAlocacao=14
-TempoDeExecSimula=16,  temposDeAlocacao=9
-TempoDeExecSimula=15,  temposDeAlocacao=8
-TempoDeExecSimula=19, temposDeAlocacao=13
-TempoDeExecSimula=19, temposDeAlocacao=13
-TempoDeExecSimula=15, temposDeAlocacao=8
-TempoDeExecSimula=26, temposDeAlocacao=20
-TempoDeExecSimula=18, temposDeAlocacao=12
-TempoDeExecSimula=12, temposDeAlocacao=8
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=15, temposDeAlocacao=8
-TempoDeExecSimula=17, temposDeAlocacao=12
-TempoDeExecSimula=22, temposDeAlocacao=15
-TempoDeExecSimula=26, temposDeAlocacao=20
-TempoDeExecSimula=16, temposDeAlocacao=9
-TempoDeExecSimula=19, temposDeAlocacao=14
-TempoDeExecSimula=19, temposDeAlocacao=13
-TempoDeExecSimula=17, temposDeAlocacao=11
-TempoDeExecSimula=16,  temposDeAlocacao=9
-TempoDeExecSimula=14, temposDeAlocacao=9
-TempoDeExecSimula=11, temposDeAlocacao=6
-TempoDeExecSimula=17,  temposDeAlocacao=11
-TempoDeExecSimula=19, temposDeAlocacao=12
-TempoDeExecSimula=11, temposDeAlocacao=6
-TempoDeExecSimula=15, temposDeAlocacao=11
-TempoDeExecSimula=10, temposDeAlocacao=6
-TempoDeExecSimula=11, temposDeAlocacao=7
-TempoDeExecSimula=16, temposDeAlocacao=11
-TempoDeExecSimula=18,  temposDeAlocacao=11
-TempoDeExecSimula=21, temposDeAlocacao=15
-TempoDeExecSimula=10, temposDeAlocacao=7
-TempoDeExecSimula=21, temposDeAlocacao=16
-TempoDeExecSimula=19, temposDeAlocacao=13
-TempoDeExecSimula=15,  temposDeAlocacao=8
+ TempoDeExecSimula=52, temposDeAlocacao= 46  
+ TempoDeExecSimula=26, temposDeAlocacao= 19  
+ TempoDeExecSimula=25, temposDeAlocacao= 20  
+ TempoDeExecSimula=32, temposDeAlocacao= 25  
+ TempoDeExecSimula=21, temposDeAlocacao= 18  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 15  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=26, temposDeAlocacao= 21  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=8,  temposDeAlocacao= 5  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 5  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=23, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 14  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=8,  temposDeAlocacao= 5  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=24, temposDeAlocacao= 21  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, , temposDeAlocacao= 7  
+ TempoDeExecSimula=21, temposDeAlocacao= 16  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=23, temposDeAlocacao= 20  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14,  temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=10,  temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14,  temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 5  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=11,  temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=22, temposDeAlocacao= 18  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 16  
+ TempoDeExecSimula=19, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 5  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14,  temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=20, temposDeAlocacao= 17  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=25, temposDeAlocacao= 19  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=20, temposDeAlocacao= 14  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 5  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=19, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=29, temposDeAlocacao= 23  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=8,  temposDeAlocacao= 5  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=18, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=17, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=22, temposDeAlocacao= 16  
+ TempoDeExecSimula=12,  temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=21, temposDeAlocacao= 14  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=19, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=23, temposDeAlocacao= 19  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 15  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=23, temposDeAlocacao= 18  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=16,  temposDeAlocacao= 12  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=28, temposDeAlocacao= 21  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=8,  temposDeAlocacao= 5  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=22, temposDeAlocacao= 19  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 6  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=16,  temposDeAlocacao= 13  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=17, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=24, temposDeAlocacao= 20  
+ TempoDeExecSimula=21, temposDeAlocacao= 17  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=20, temposDeAlocacao= 13  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=18, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 14  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 12  
+ TempoDeExecSimula=13, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 5  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=17, temposDeAlocacao= 13  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 13  
+ TempoDeExecSimula=10, temposDeAlocacao= 5  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=18, temposDeAlocacao= 12  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=16, temposDeAlocacao= 13  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=11, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=14,  temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=13, temposDeAlocacao= 9  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=10, temposDeAlocacao= 7  
+ TempoDeExecSimula=15, temposDeAlocacao= 12  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=13, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 9  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=10, temposDeAlocacao= 6  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=12, temposDeAlocacao= 7  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 10  
+ TempoDeExecSimula=12, temposDeAlocacao= 8  
+ TempoDeExecSimula=9,  temposDeAlocacao= 5  
+ TempoDeExecSimula=13, temposDeAlocacao= 8  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=16, temposDeAlocacao= 12  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=12, temposDeAlocacao= 9  
+ TempoDeExecSimula=11, temposDeAlocacao= 7  
+ TempoDeExecSimula=11, temposDeAlocacao= 8  
+ TempoDeExecSimula=16, temposDeAlocacao= 11  
+ TempoDeExecSimula=14, temposDeAlocacao= 10  
+ TempoDeExecSimula=14, temposDeAlocacao= 11  
+ TempoDeExecSimula=15, temposDeAlocacao= 11  
+ TempoDeExecSimula=19, temposDeAlocacao= 15  
+ TempoDeExecSimula=9,  temposDeAlocacao= 6  
