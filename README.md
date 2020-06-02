@@ -19,7 +19,9 @@ Para executar a aplicação, é necessário possuir instalado e configurado os s
 
 Para executar a aplicação é necessário clonar o projeto:
 
+```shell
 git clone https://github.com/AndersonS001/TCC---LoadBalance.git
+```
 
 ## Compilação
 
