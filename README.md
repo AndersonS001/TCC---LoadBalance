@@ -2,17 +2,17 @@
 
 Esse projeto foi desenvolvido para atender o Trabalho de Conclusão de Curso dos alunos do 8º semestre/ 2020.01 do curso de Ciência da Computação do Centro Universitário da FEI e a estrutura da aplicação e baseada no Maven utilizando o JDK8.
 
-Essa aplicação tem como objetivo analisar três algoritmos Bioinspirados (Algoritmo Genético, Colônia de Formigas e Algoritmo dos Vagalumes) no processo de alocação de máquinas virtuais em um ambiente cloud utilizando [CloudSim Plus] (https://github.com/manoelcampos/cloudsim-plus).
+Essa aplicação tem como objetivo analisar três algoritmos Bioinspirados (Algoritmo Genético, Colônia de Formigas e Algoritmo dos Vagalumes) no processo de alocação de máquinas virtuais em um ambiente cloud utilizando [CloudSim Plus](https://github.com/manoelcampos/cloudsim-plus).
 
 
 ## Configurando o Ambiente
 
 Para executar a aplicação, é necessário possuir instalado e configurado os seguintes programas:
 
-- [Java JDK 8] (https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
-- [Apache Maven 3.6.3] (https://maven.apache.org/download.cgi)
-- [IDE Visual Studio Code] (https://code.visualstudio.com/Download)
-- [Java no Visual Studio Code] (https://code.visualstudio.com/docs/languages/java)
+- [Java JDK 8](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot)
+- [Apache Maven 3.6.3](https://maven.apache.org/download.cgi)
+- [IDE Visual Studio Code](https://code.visualstudio.com/Download)
+- [Java no Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
 
 
 ## Código Fonte
