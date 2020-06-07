@@ -13,6 +13,7 @@ Para executar a aplicação, é necessário possuir instalado e configurado os s
 - [Apache Maven 3.6.3](https://maven.apache.org/download.cgi)
 - [IDE Visual Studio Code](https://code.visualstudio.com/Download)
 - [Java no Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
+- [Lombok Annotations Support for VS Code](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
 
 
 ## Código Fonte
